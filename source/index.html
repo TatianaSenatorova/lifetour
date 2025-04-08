@@ -1,31 +1,105 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifetour</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="header">header</div>
-    <div data-test="hero">hero</div>
-    <div data-test="tours">tours</div>
-    <div data-test="training">training</div>
-    <div data-test="about">about</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="adv">adv</div>
-    <div data-test="gallery">gallery</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <div class="container">
+      <div class="main-header__content">
+        <nav class="main-header__main-nav">
+          <button class="main-header__burger" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="main-header__burger-icon" aria-hidden="true" focusable="false" width="26" height="26">
+              <use href="/__spritemap#sprite-burger-menu"></use>
+            </svg>
+            <span class="visually-hidden">Закрыть меню</span>
+            <svg class="main-header__close-icon" aria-hidden="true" focusable="false" width="26" height="26">
+              <use href="/__spritemap#sprite-close-menu">></use>
+            </svg>
+          </button>
+          <ul class="main-header__nav-list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--current" href="#">
+                Туры
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">
+                Обучение
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="programs.html">
+                О&nbsp;нас
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="programs.html">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="programs.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="programs.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="main-header__logo-image logo-image">
+          <picture>
+            <source media="(min-width: 1440px)" width="205" height="62" type="image/svg+xml"
+              srcset="/__spritemap#sprite-logo-light-desktop">
+            <img src="/__spritemap#sprite-logo-light-mobile" alt="Логотип компании Lifetour" width="142" height="42">
+          </picture>
+        </a>
+        <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом hero__phone. -->
+        <a class="main-header__phone" href="tel:+78000000000">8&nbsp;800 000-00-00</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <div class="container">
+
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+    
+    </div>
+  </footer>
+
+  <!-- пример использования спрайта -->
+  <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg>
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <div data-test="header">header</div>
+  <div data-test="hero">hero</div>
+  <div data-test="tours">tours</div>
+  <div data-test="training">training</div>
+  <div data-test="about">about</div>
+  <div data-test="reviews">reviews</div>
+  <div data-test="adv">adv</div>
+  <div data-test="gallery">gallery</div>
+  <div data-test="form">form</div>
+  <div data-test="footer">footer</div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
