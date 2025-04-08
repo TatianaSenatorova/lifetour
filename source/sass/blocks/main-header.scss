@@ -1,0 +1,256 @@
+.main-header {
+  position: relative;
+  padding: 15px 0 5px;
+  min-height: 100px;
+  background-color: $color-navy-blue;
+  --header-height: 100px;
+  --link-padding: 5px;
+
+
+
+  // & .nav-list__link--current {
+  //   @media (min-width: $tablet-width) {
+  //     text-decoration-color: $color-apple;
+  //   }
+  // }
+
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {}
+}
+
+.main-header__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 30px;
+
+  // &:has(a:hover) .logo-image,
+  // &:has(a:hover) .logo-text {
+  //   opacity: 0.8;
+  // }
+
+  // &:has(a:active) .logo-image,
+  // &:has(a:active) .logo-text {
+  //   opacity: 0.6;
+  // }
+
+  @media (min-width: $tablet-width) {
+    // padding-top: 25px;
+    // padding-bottom: 25px;
+    // justify-content: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 55px;
+    // padding-bottom: 34px;
+  }
+}
+
+// .main-header__logo-image {
+//   @media (min-width: $tablet-width) {
+//     margin-right: 13px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     margin-right: 14px;
+//   }
+// }
+
+// .main-header__logo-text {
+//   .main-header--nojs & {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     top: 23px;
+//   }
+// }
+
+
+.main-header__main-nav {
+
+  @media (min-width: $tablet-width) {
+    // flex-grow: 1;
+    // max-width: 500px;
+    // margin-left: auto;
+  }
+}
+
+.main-header__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  padding: 0 14px 14px 0;
+  cursor: pointer;
+  background-color: unset;
+  color: inherit;
+  flex-shrink: 0;
+
+  &:hover {
+    // color: $color-slate-blue;
+  }
+
+  &:focus {
+    // color: $color-slate-blue;
+  }
+
+  &:active {
+    // color: $color-slate-blue;
+    // background-color: $color-magnolia;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    // display: none;
+  }
+}
+
+.main-header__close-icon {
+  display: none;
+
+  .main-header--nav-is-opened & {
+    display: block;
+  }
+}
+
+.main-header__burger-icon {
+  .main-header--nav-is-opened & {
+    display: none;
+  }
+}
+
+.main-header__nav-list {
+  position: absolute;
+  padding: 15px 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  max-height: calc(100vh - var(--header-height));
+  list-style: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: $color-navy-blue;
+
+  .main-header--nav-is-opened & {
+    z-index: $z-index-first;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (min-width: $tablet-width) {
+    // max-width: 450px;
+    // height: 100%;
+    // position: relative;
+    // visibility: visible;
+    // opacity: 1;
+    // flex-flow: row wrap;
+    // order: 0;
+    // width: unset;
+    // max-height: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    // gap: 20px;
+    // max-width: 550px;
+  }
+}
+
+.main-header__nav-item {
+  line-height: 1;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+
+  // @media (min-width: $tablet-width) {
+  //   width: fit-content;
+  // }
+}
+
+.main-header__nav-link {
+  position: relative;
+  display: block;
+  padding: 3px 5px;
+  text-decoration: none;
+   // width: 100%;
+  transition: background-color 0.5s, color 0.3s;
+  color: $color-white;
+
+  &:hover {
+    // color: $color-slate-blue;
+  }
+
+  &:focus {
+    // color: $color-slate-blue;
+  }
+
+  &:active {
+    // color: $color-night-rider;
+    // background-color: $color-magnolia;
+  }
+
+  &--current {
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      // background-color: $color-slate-blue;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border-bottom: unset;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &--current::after {
+      display: block;
+    }
+
+    &:active {
+      // color: $color-slate-blue;
+    }
+  }
+}
+
+
+.main-header__logo {
+  justify-self: flex-end;
+}
+
+.main-header__phone {
+  grid-column: 2 / -1;
+  justify-self: flex-end;
+  padding: 10px 0;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  color: $color-white;
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.50);
+  }
+
+  &:focus {
+    color: $color-elephant;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &--is-disabled {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+}
