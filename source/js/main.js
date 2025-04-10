@@ -4,3 +4,4 @@
 // import 'swiper/css';
 
 import './burger-menu.js';
+import './hero-slider.js';

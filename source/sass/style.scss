@@ -3,6 +3,11 @@
 
 @import "vendor/normalize";
 
+//Swiper
+@import "swiper/css";
+@import 'swiper/css/pagination';
+
+
 /* GLOBAL */
 @import "common/variables";
 @import "common/fonts";
@@ -16,6 +21,7 @@
 @import "blocks/logo";
 @import "blocks/main-content";
 @import "blocks/hero";
+@import "blocks/hero-card";
 // @import "blocks/button";
 // @import "blocks/section-title";
 // @import "blocks/about";
