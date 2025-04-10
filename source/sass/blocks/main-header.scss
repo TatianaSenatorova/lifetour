@@ -94,7 +94,7 @@
   transition: opacity 0.5s, visibility 0.5s;
 
   .main-header--nav-is-opened & {
-    z-index: $z-index-first;
+    z-index: $z-index-second;
     opacity: 1;
     visibility: visible;
   }

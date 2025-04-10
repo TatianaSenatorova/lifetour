@@ -1,8 +1,37 @@
-.hero-card {
-
-}
+.hero-card {}
 
 .hero-card__image {
   display: block;
   width: 100%;
+}
+
+.hero-card__info {
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 472px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.hero-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  color: $color-white;
+}
+
+.hero-card__description {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.33;
+  color: $color-white;
 }
