@@ -1,0 +1,45 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: $color-white;
+  border: 1px solid transparent;
+  background-color: $color-navy-blue;
+  cursor: pointer;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $color-white;
+    border-color: $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    border-color: transparent;
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+    border-color: transparent;
+    color: $color-white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background-color: $color-nobel;
+  }
+
+  &--is-disabled {
+    background-color: $color-nobel;
+    pointer-events: none;
+  }
+}

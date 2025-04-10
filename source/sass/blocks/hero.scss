@@ -17,30 +17,34 @@
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 2px;
 }
 
 .swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    background-color: $color-white;
-    border: 1px solid $color-white;
-    cursor: pointer;
-    transition: background-image 0.3s;
+  margin: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: transparent;
+  background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px);
+  cursor: pointer;
+  transition: background-image 0.3s;
 
-    &:hover {
+  &:hover {
+    background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
+  }
 
-    }
+  &:focus {
+    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px, rgba(255, 255, 255, 0.5) 10px, transparent 11px);
+  }
 
-    &:focus {
+  &:active {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 7px, $color-white 8px, transparent 9px);
+  }
 
-    }
+}
 
-    &:active {
-
-    }
-
-    &--is-current {
-
-    }
+.swiper-pagination-bullet-active {
+  background-image: radial-gradient(circle, $color-white 8px, transparent 9px);
 }
