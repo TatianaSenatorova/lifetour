@@ -42,7 +42,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    min-height: 800px;
+   justify-content: flex-end;
+   align-items: flex-start;
+    padding: 80px 0;
   }
 }
 
@@ -104,6 +107,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 780px;
+    margin-bottom: 35px;
+    max-height: 360px;
 
     h2 {
       margin-bottom: 25px;
@@ -123,6 +128,10 @@
   width: 180px;
   min-height: 56px;
   margin-bottom: 5px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 134px;
+  }
 }
 
 .hero-card__addition-wrap {
@@ -136,7 +145,10 @@
 }
 
 .hero-card__addition-info {
-  padding: 14px 20px 14px 40px;
+  padding: 10px 20px 10px 40px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.50);
   font-size: 12px;
   font-weight: 400;

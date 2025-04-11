@@ -3,8 +3,6 @@
   padding: 15px 0 5px;
   min-height: 100px;
   background-color: $color-navy-blue;
-  // --header-height-mobile: 100px;
-  // --header-height-tablet: 82px;
   --link-padding: 5px;
   --mobile-side-padding: 15px;
   --tablet-side-padding: 45px;
@@ -97,7 +95,6 @@
 
   .main-header--nav-is-opened & {
     z-index: $z-index-third;
-
     opacity: 1;
     visibility: visible;
   }

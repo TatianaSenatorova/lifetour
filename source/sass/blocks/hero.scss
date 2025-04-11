@@ -1,8 +1,12 @@
-.hero {}
+.hero {
+  --padding-desktop: 120px;
+  --destop-card-height: 800px;
+}
 
 .hero__slider {
   overflow: hidden;
   position: relative;
+  background-color: $color-air-force-blue;
 }
 
 .hero__slider-list {
@@ -13,21 +17,22 @@
 
 .hero__slider .hero__slider-pagination {
   z-index: $z-index-first;
+  height: 40px;
   padding: 0;
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 2px;
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 7.04%;
-
-  @media (min-width: $tablet-width) {
-    bottom: 3.87%;
-  }
+  bottom: 20px;
 
   @media (min-width: $desktop-width) {
-
+    top: calc(var(--destop-card-height) - 80px);
+    transform: translateY(-100%);
+    left: unset;
+    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop));
   }
 }
 
