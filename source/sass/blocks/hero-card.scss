@@ -37,8 +37,12 @@
     min-height: 934px;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 990px) {
     min-height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
@@ -72,6 +76,14 @@
     color: $color-white;
   }
 
+  @media (min-width: 500px) {
+    max-height: 400px;
+  }
+
+  @media (min-width: 650px) {
+    max-height: 500px;
+  }
+
 
   @media (min-width: $tablet-width) {
     h2 {
@@ -85,8 +97,26 @@
     }
   }
 
+  @media (min-width: 990px) {
+    max-height: 290px;
+  }
 
-  @media (min-width: $desktop-width) {}
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+
+    h2 {
+      margin-bottom: 25px;
+      text-align: left;
+      font-size: 77px;
+    }
+
+    p {
+      max-width: 420px;
+      margin-left: 0;
+      text-align: left;
+    }
+  }
 }
 
 .hero-card__button {
