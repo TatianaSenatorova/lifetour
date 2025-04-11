@@ -16,6 +16,6 @@
   flex-direction: column;
 }
 
-.page__body:has(.main-header__main-nav--is-opened) {
+.page__body:has(.main-header--nav-is-opened) {
   overflow: hidden;
 }

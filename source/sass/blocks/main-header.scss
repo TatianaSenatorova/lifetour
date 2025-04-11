@@ -81,15 +81,13 @@
 
 .main-header__nav-wrapper {
   position: absolute;
-  padding: 15px 0;
   top: 100%;
   left: 0;
   right: 0;
-  height: auto;
-  max-height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height));
   visibility: hidden;
   opacity: 0;
-  background-color: $color-navy-blue;
+  background-color: rgba(45, 56, 63, 0.60);
   overflow-y: auto;
   transition: opacity 0.5s, visibility 0.5s;
 
@@ -111,14 +109,15 @@
 }
 
 .main-header__nav-list {
-  width: 290px;
+  width: 320px;
   margin: 0 auto;
-  padding: 0;
+  padding: 30px 15px;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  background-color: $color-navy-blue;
 
   @media (min-width: $tablet-width) {
     width: 678px;
