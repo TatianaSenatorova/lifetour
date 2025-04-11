@@ -7,6 +7,7 @@
   --link-padding: 5px;
   --mobile-side-padding: 15px;
   --tablet-side-padding: 45px;
+  z-index: $z-index-second;
 
   @media (min-width: $tablet-width) {
     min-height: 82px;
@@ -94,7 +95,8 @@
   transition: opacity 0.5s, visibility 0.5s;
 
   .main-header--nav-is-opened & {
-    z-index: $z-index-second;
+    z-index: $z-index-third;
+
     opacity: 1;
     visibility: visible;
   }

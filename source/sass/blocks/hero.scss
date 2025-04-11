@@ -2,6 +2,7 @@
 
 .hero__slider {
   overflow: hidden;
+  position: relative;
 }
 
 .hero__slider-list {
@@ -11,6 +12,7 @@
 }
 
 .hero__slider .hero__slider-pagination {
+  z-index: $z-index-first;
   padding: 0;
   list-style: none;
   display: flex;
@@ -18,6 +20,15 @@
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
+  bottom: 7.04%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 3.87%;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .hero__pagination-control {
@@ -32,6 +43,7 @@
   background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px);
   cursor: pointer;
   transition: background-image 0.3s;
+
 
   &:hover {
     background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
