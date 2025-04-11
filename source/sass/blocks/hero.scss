@@ -10,15 +10,17 @@
   list-style: none;
 }
 
-.hero__slider-pagination {
-  margin: 0;
+.hero__slider .hero__slider-pagination {
   padding: 0;
   list-style: none;
   display: flex;
   gap: 2px;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.swiper-pagination-bullet {
+.hero__pagination-control {
   margin: 0;
   width: 26px;
   height: 26px;
@@ -41,8 +43,8 @@
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 7px, $color-white 8px, transparent 9px);
   }
 
-}
+  &--is-active {
+    background-image: radial-gradient(circle, $color-white 8px, transparent 9px);
+  }
 
-.swiper-pagination-bullet-active {
-  background-image: radial-gradient(circle, $color-white 8px, transparent 9px);
 }
