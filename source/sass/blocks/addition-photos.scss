@@ -1,16 +1,14 @@
 .addition-photos {
   display: none;
   width: fit-content;
-  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
   }
 
-  // @media (min-width: $desktop-width) {
-  //   width: $desktop-width;
-  //   padding: 0 120px;
-  // }
+  @media (min-width: $desktop-width) {
+  
+  }
 }
 
 .addition-photos__image {

@@ -1,6 +1,7 @@
 .hero {
   --padding-desktop: 120px;
   --destop-card-height: 800px;
+  --addition-space--bullet: 5px;
 }
 
 .hero__slider {
@@ -26,13 +27,13 @@
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 37px;
+  bottom: 35px;
 
   @media (min-width: $desktop-width) {
-    top: calc(var(--destop-card-height) - 80px);
-    transform: translateY(-100%);
+    bottom: 86px;
     left: unset;
-    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop));
+    transform: unset;
+    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop) - var(--addition-space--bullet));
   }
 }
 
@@ -47,7 +48,7 @@
   opacity: 1;
   background-color: transparent;
   // border: 1px solid $color-white;
-  background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px);
+  background-image: radial-gradient(circle, transparent 6px, $color-white 8px, transparent 9px);
   cursor: pointer;
   transition: background-image 0.3s;
 
@@ -58,7 +59,7 @@
   }
 
   &:focus {
-    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px,  transparent 11px,  rgba(255, 255, 255, 0.5) 12px, transparent 13px);
+    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px, transparent 11px, rgba(255, 255, 255, 0.5) 12px, transparent 13px);
   }
 
   &:active {

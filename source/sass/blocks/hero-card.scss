@@ -1,23 +1,15 @@
 .hero-card {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: 1fr;
+  position: relative;
   background-color: $color-air-force-blue;
-}
+  min-height: 568px;
 
-.hero-card__overlay {
-  background-color: transparent;
-  grid-area: 1 / 2;
-  z-index: $z-index-first;
-
-  @media (min-width: $desktop-width) {}
+  // @media (min-width: 990px) {
+  //   min-height: 550px;
+  // }
 }
 
 .hero-card__image-wrap {
-  grid-area: 1 / 2;
   z-index: 0;
-  height: 100%;
-  min-width: 100vw;
 }
 
 .hero-card__image {
@@ -26,31 +18,50 @@
   height: 100%;
 }
 
+.hero-card__overlay {
+  position: absolute;
+  top: 40px;
+  bottom: 66px;
+  left: 0;
+  right: 0;
+  z-index: $z-index-first;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+    bottom: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 80px;
+    align-items: flex-end;
+  }
+}
+
 .hero-card__info {
   width: 100%;
-  min-height: 472px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 102px 0 20px;
+  padding: 30px 0 14px;
 
   @media (min-width: $tablet-width) {
-    min-height: 934px;
-    padding: 137px 0 97px;
-  }
-
-  @media (min-width: 990px) {
-    min-height: 500px;
+    padding: 50px 0 10px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 800px;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 80px 0;
+    display: block;
+    padding: 0;
+
+    .hero-card--addition-photos & {
+      display: grid;
+      grid-template-columns: 806px 1fr;
+    }
   }
 }
+
 
 .hero-card__content {
   text-align: center;
@@ -83,13 +94,8 @@
   }
 
   @media (min-width: 500px) {
-    max-height: 400px;
+    max-height: 370px;
   }
-
-  @media (min-width: 650px) {
-    max-height: 500px;
-  }
-
 
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;
@@ -105,15 +111,10 @@
     }
   }
 
-  @media (min-width: 990px) {
-    max-height: 290px;
-  }
-
-
   @media (min-width: $desktop-width) {
-    max-width: 780px;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
     max-height: 360px;
+    max-width: 806px;
 
     h2 {
       margin-bottom: 25px;
@@ -150,6 +151,18 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    grid-column: 1 / 2;
+  }
+}
+
+.hero-card__addition-photos {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: -16px;
+    margin-top: -13px;
+    grid-column: 2 / -1;
+    grid-row: 1 / 3;
   }
 }
 

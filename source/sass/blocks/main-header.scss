@@ -1,6 +1,6 @@
 .main-header {
   position: relative;
-  padding: 15px 0 5px;
+  padding: 15px 0 3px;
   min-height: 100px;
   background-color: $color-navy-blue;
   --link-padding: 5px;
@@ -30,7 +30,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 592px 1fr;
+    grid-template-columns: 205px 1fr 157px;
+    gap: 40px;
   }
 }
 
@@ -129,7 +130,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: unset;
+    width: fit-content;
     padding: unset;
     flex-direction: row;
     align-items: center;
@@ -227,5 +228,9 @@
   @media (min-width: $tablet-width) {
     grid-column: -1 / -2;
     font-size: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
   }
 }
