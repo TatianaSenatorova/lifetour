@@ -45,6 +45,7 @@
   border: none;
   opacity: 1;
   background-color: transparent;
+  // border: 1px solid $color-white;
   background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px);
   cursor: pointer;
   transition: background-image 0.3s;
@@ -55,7 +56,7 @@
   }
 
   &:focus {
-    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px, rgba(255, 255, 255, 0.5) 10px, transparent 11px);
+    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px,  transparent 11px,  rgba(255, 255, 255, 0.5) 12px, transparent 13px);
   }
 
   &:active {
