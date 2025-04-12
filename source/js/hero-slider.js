@@ -9,7 +9,6 @@ const heroSwiper = new Swiper('.swiper-hero', {
   slidesPerView: 1,
   initialSlide: 0,
 
-
   breakpoints: {
     1440: {
       allowTouchMove: false,
