@@ -17,16 +17,16 @@
 
 .hero__slider .hero__slider-pagination {
   z-index: $z-index-first;
-  height: 40px;
+  // height: 40px;
   padding: 0;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20px;
+  bottom: 37px;
 
   @media (min-width: $desktop-width) {
     top: calc(var(--destop-card-height) - 80px);
@@ -43,6 +43,7 @@
   border-radius: 50%;
   outline: none;
   border: none;
+  padding: 0;
   opacity: 1;
   background-color: transparent;
   // border: 1px solid $color-white;
@@ -53,6 +54,7 @@
 
   &:hover {
     background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
+
   }
 
   &:focus {
@@ -67,4 +69,13 @@
     background-image: radial-gradient(circle, $color-white 8px, transparent 9px);
   }
 
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px);
+
+    &--is-active {
+      background-image: radial-gradient(circle, $color-white 10px, transparent 11px);
+    }
+  }
 }

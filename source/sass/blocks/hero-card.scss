@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 102px 0 20px;
 
   @media (min-width: $tablet-width) {
     min-height: 934px;
@@ -60,7 +60,7 @@
   color: $color-white;
   max-height: 300px;
   overflow-y: auto;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 
   h2 {
     margin: 0;
