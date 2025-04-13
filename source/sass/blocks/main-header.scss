@@ -3,7 +3,7 @@
   padding: 15px 0 3px;
   min-height: 100px;
   background-color: $color-navy-blue;
-  --link-padding: 5px;
+  --link-padding: 4px;
   --mobile-side-padding: 15px;
   --tablet-side-padding: 45px;
   z-index: $z-index-second;
@@ -146,7 +146,7 @@
 .main-header__link {
   display: block;
   margin-left: calc(var(--link-padding) * -1);
-  padding: 3px 5px;
+  padding: 2px 4px;
   text-decoration: none;
   line-height: 1;
   font-weight: 700;

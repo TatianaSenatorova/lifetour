@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 80px;
+    padding-bottom: 80px;
     align-items: flex-end;
   }
 }
@@ -50,7 +50,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 9px 0 14px;
-    // padding: 50px 0 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,7 +152,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 149px;
+    top: 187px;
     right: 120px;
   }
 }

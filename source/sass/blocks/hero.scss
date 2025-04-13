@@ -8,7 +8,13 @@
   overflow: hidden;
   position: relative;
   background-color: $color-air-force-blue;
+
+  // &:not('swiper-slide-active') {
+
+  // }
 }
+
+
 
 .hero__slider-item {
   height: auto;
@@ -22,7 +28,6 @@
 
 .hero__slider .hero__slider-pagination {
   z-index: $z-index-first;
-  // height: 40px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -51,7 +56,6 @@
   padding: 0;
   opacity: 1;
   background-color: transparent;
-  // border: 1px solid $color-white;
   background-image: radial-gradient(circle, transparent 6px, $color-white 8px, transparent 9px);
   cursor: pointer;
   transition: background-image 0.3s;
@@ -59,7 +63,6 @@
 
   &:hover {
     background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
-
   }
 
   &:focus {
@@ -78,6 +81,18 @@
     width: 30px;
     height: 30px;
     background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px);
+
+    &:hover {
+      background-image: radial-gradient(circle, $color-gainsboro 9px, $color-white 10px, transparent 11px);
+    }
+
+    &:focus {
+      background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px, transparent 13px, rgba(255, 255, 255, 0.5) 14px, transparent 15px);
+    }
+
+    &:active {
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 9px, $color-white 10px, transparent 11px);
+    }
 
     &--is-active {
       background-image: radial-gradient(circle, $color-white 10px, transparent 11px);
