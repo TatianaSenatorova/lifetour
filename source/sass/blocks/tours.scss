@@ -1,0 +1,27 @@
+.tours {
+padding: 20px 0;
+}
+
+.tours__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.tours__slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  // justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 330px));
+    // column-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
