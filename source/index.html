@@ -274,19 +274,28 @@
                   <a class="tours-card__link" href="#">
                     <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h2>
                   </a>
-                 <div class="tours-card__bottom">
-                    <div>
-                      <span class="tours-card__bottom-title">Сложность:</span>
-                    </div>
-                    <div>
-                      <span class="tours-card__bottom-title">Даты набора:</span>
-                      <span class="tours-card__bottom-info">12.06&ndash;19.06</span>
-                    </div>
-                    <div>
-                      <span class="tours-card__bottom-title">Группа:</span>
-                      <span class="tours-card__bottom-info">до&nbsp;15&nbsp;чел.</span>
-                    </div>
-                  </div>
+                  <ul class="tours-card__list-conditions">
+                    <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
+                     Одна звезда - tours-card__conditions-item--one-level.
+                     Две звезды - tours-card__conditions-item--two-level.
+                     Три звезды - tours-card__conditions-item--three-level.
+                     Четыре звезды - tours-card__conditions-item--four-level.
+                     Пять звезд - tours-card__conditions-item--five-level.
+                     -->
+                    <li
+                      class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--four-level">
+                      <span class="tours-card__conditions-title">Сложность:</span>
+                      <span class="visually-hidden">Четвертый уровень сложности из пяти</span>
+                    </li>
+                    <li class="tours-card__conditions-item">
+                      <span class="tours-card__conditions-title">Даты набора:</span>
+                      <span class="tours-card__conditions-info">12.06&ndash;19.06</span>
+                    </li>
+                    <li class="tours-card__conditions-item">
+                      <span class="tours-card__conditions-title">Группа:</span>
+                      <span class="tours-card__conditions-info">до&nbsp;15&nbsp;чел.</span>
+                    </li>
+                  </ul>
                 </div>
               </article>
             </li>

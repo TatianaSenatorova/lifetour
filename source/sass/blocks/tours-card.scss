@@ -87,7 +87,11 @@
   background-size: 80px 1px;
 }
 
-.tours-card__bottom {
+.tours-card__list-conditions {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
   grid-template-columns: 84px 83px 1fr;
   color: $color-white;
@@ -97,13 +101,72 @@
   line-height: 1;
 }
 
-.tours-card__bottom-info {
+.tours-card__conditions-item--complicity::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 84px;
+  max-width: 84px;
+  height: 16px;
+  background-image: url("/__spritemap#sprite-raiting-star-view");
+  background-size: 16px 16px;
+  background-repeat: space;
+  background-position: left bottom;
+}
+
+.tours-card__conditions-item::before {
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 84px;
+  max-width: 84px;
+  height: 16px;
+  background-image: url("/__spritemap#sprite-raiting-filled-star-view");
+  background-size: 16px 16px;
+  background-repeat: space;
+  background-position: left bottom;
+}
+
+.tours-card__conditions-item--one-level::before {
+  display: block;
+  width: 16px;
+  max-width: 16px;
+}
+
+.tours-card__conditions-item--two-level::before {
+  display: block;
+  width: 33px;
+  max-width: 33px;
+}
+
+.tours-card__conditions-item--three-level::before {
+  display: block;
+  width: 50px;
+  max-width: 50px;
+}
+
+.tours-card__conditions-item--four-level::before {
+  display: block;
+  width: 67px;
+  max-width: 67px;
+}
+
+.tours-card__conditions-item--five-level::before {
+  display: block;
+  width: 84px;
+  max-width: 84px;
+}
+
+.tours-card__conditions-info {
   font-size: 13px;
   font-weight: 700;
   line-height: 1;
 }
 
-.tours-card__bottom-title {
+.tours-card__conditions-title {
   display: block;
   margin-bottom: 7px;
 }
