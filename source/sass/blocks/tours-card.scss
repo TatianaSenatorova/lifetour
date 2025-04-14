@@ -1,0 +1,109 @@
+.tours-card {
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 416px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tours-card__image-wrap {
+  max-width: 100%;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.tours-card__image-wrap img {
+  display: block;
+}
+
+.tours-card__overlay {
+  max-width: 100%;
+  grid-area: 1 / 1 / 2 / 2;
+  align-self: flex-end;
+  padding: 30px 20px;
+}
+
+.tours-card__top-info {
+  margin-bottom: 15px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: $color-white;
+}
+
+.tours-card__duration-wrap {
+  margin: 0;
+  display: flex;
+  gap: 14px;
+}
+
+.tours-card__info {
+  padding: 4px 0 4px 32px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 20px 20px;
+
+  &--place {
+    background-color: $color-navy-blue;
+    padding: 8px 12px 8px 34px;
+    background-image: url("/__spritemap#sprite-map-marker-view");
+    background-size: 16px 16px;
+    background-position: 12px center;
+  }
+
+  &--days {
+    background-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--nights {
+    background-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.tours-card__link {
+  display: block;
+  text-decoration: none;
+}
+
+.tours-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  color: $color-white;
+  background-image:
+    linear-gradient(to top, rgba(255, 255, 255, 0.2) 1px, transparent 2px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.2) 80px, transparent 81px);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 80px 1px;
+}
+
+.tours-card__bottom {
+  display: grid;
+  grid-template-columns: 84px 83px 1fr;
+  color: $color-white;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.tours-card__bottom-info {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tours-card__bottom-title {
+  display: block;
+  margin-bottom: 7px;
+}

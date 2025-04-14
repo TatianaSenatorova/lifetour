@@ -1,5 +1,5 @@
 .tours {
-padding: 20px 0;
+  padding: 20px 0;
 }
 
 .tours__title {
@@ -21,7 +21,6 @@ padding: 20px 0;
     // column-gap: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
+  @media (min-width: $desktop-width) {}
 }
+

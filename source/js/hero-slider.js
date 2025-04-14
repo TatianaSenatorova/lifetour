@@ -11,6 +11,8 @@ const heroSwiper = new Swiper('.swiper-hero', {
   loop: true,
   slidesPerView: 1,
   initialSlide: 0,
+  // watchSlidesProgress: true,
+  // centeredSlides: true,
   // a11y: {
   //   scrollOnFocus: false,
   // },
@@ -43,13 +45,51 @@ const heroSwiper = new Swiper('.swiper-hero', {
 
 
 
+// heroSwiper.slides.forEach((slide) => {
+//   slide.addEventListener('focusin', () => {
+//     const focusedSlide = slide.dataset.swiperSlideIndex;
+//     heroSwiper.slides.forEach((slide) => {
+//       console.log(focusedSlide);
+//       slide.classList.remove('swiper-slide-active');
+//     })
+
+//     console.log(focusedSlide);
+//     heroSwiper.slides[focusedSlide].classList.add('swiper-slide-active');
+//     // heroSwiper.loopFix();
+//     // heroSwiper.slideTo(index);
+//     // console.log(slides[index]);
+//     // slides[index].style.right = '0';
+//     // slides[index].style.left = '0';
+//   });
+// })
+
+
+// slide.onfocusin = function () {
+//   // Сбрасываем скролл
+//   _this.scrollLeft = 0;
+//   // И еще раз с нулевым таймаутом, потому что в вебките скролл
+//   // выставляется позже события. Первый ресет оставляем, чтобы
+//   // в других браузерах не дергалось.
+//   setTimeout(function () {
+//     _this.scrollLeft = 0;
+//   }, 0);
+
+//   // Переключаем на слайд, к которому привязано событие
+//   changeActiveSlide(i);
+// };
+
+// Используем привязанную к `onfocusin` функцию уже
+// в нормальном `addEventListener`
+// if (slide.addEventListener) {
+//   // `true` включает капчуринг
+//   slide.addEventListener('focus', slide.onfocusin, true);
+// }
+
+const onFocusSlider = (index) => {
+console.log(index);
+changeActiveSlide(i);
+}
+
 heroSwiper.slides.forEach((slide, index) => {
-  slide.addEventListener('focusin', () => {
-    console.log(index);
-    heroSwiper.loopFix();
-    // heroSwiper.slideTo(index);
-    // console.log(slides[index]);
-    // slides[index].style.right = '0';
-    // slides[index].style.left = '0';
-  });
+  slide.addEventListener('focusin', () => onFocusSlider(index));
 })
