@@ -2,13 +2,35 @@
   padding: 20px 0;
 }
 
+.tours__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .tours__title {
   margin: 0;
   margin-bottom: 25px;
 }
 
-.tours__slider-list {
+.tours__buttons-list {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
+}
+
+.tours__slider-list {
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
   list-style: none;
