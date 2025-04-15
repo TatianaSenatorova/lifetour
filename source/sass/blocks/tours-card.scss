@@ -5,6 +5,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
+  background-color: $color-black-forest;
 }
 
 .tours-card__image-wrap {
@@ -35,11 +36,13 @@
   font-weight: 500;
   line-height: 1;
   color: $color-white;
+  word-break: break-word;
 }
 
 .tours-card__duration-wrap {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 14px;
 }
 
@@ -85,20 +88,29 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 80px 1px;
+  word-break: break-word;
 }
 
 .tours-card__list-conditions {
-  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 84px 83px 1fr;
+  row-gap: 5px;
   color: $color-white;
-  gap: 8px;
+  column-gap: 8px;
   font-size: 12px;
   font-weight: 300;
   line-height: 1;
+  word-break: break-all;
+}
+
+.tours-card__conditions-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .tours-card__conditions-item--complicity::after {

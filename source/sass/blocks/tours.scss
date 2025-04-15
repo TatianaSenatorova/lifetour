@@ -9,6 +9,7 @@
 
 .tours__slider-list {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
   display: grid;
@@ -24,3 +25,7 @@
   @media (min-width: $desktop-width) {}
 }
 
+.tours__button-secondary {
+  width: 212px;
+  margin: 0 auto;
+}

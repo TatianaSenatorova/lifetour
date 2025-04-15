@@ -1,0 +1,44 @@
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 9px 10px;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.56px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.10);
+  }
+
+  &:focus {
+    color: $color-navy-blue;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &:disabled {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+
+  &--is-disabled {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+}
+
+.button-secondary__arrow {
+  display: block;
+}

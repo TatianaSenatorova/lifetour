@@ -37,7 +37,7 @@
             </svg>
             <span class="visually-hidden">Закрыть меню</span>
             <svg class="main-header__close-icon" aria-hidden="true" focusable="false" width="26" height="26">
-              <use href="/__spritemap#sprite-close-menu">></use>
+              <use href="/__spritemap#sprite-close-menu"></use>
             </svg>
           </button>
           <div class="main-header__nav-wrapper">
@@ -187,7 +187,6 @@
                         </picture>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </article>
@@ -301,6 +300,12 @@
             </li>
 
           </ul>
+          <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
+          <a class="tours__button-secondary button-secondary" href="#">Показать все туры
+            <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
+              <use href="/__spritemap#sprite-arrow-right"></use>
+            </svg>
+          </a>
         </div>
 
       </section>
