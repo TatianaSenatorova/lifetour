@@ -30,18 +30,15 @@
 
 .tours__slider-list {
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   padding: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
 
-  // justify-content: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: repeat(auto-fill, minmax(330px, 330px));
-    // column-gap: 30px;
+    // grid-template-columns: repeat(2, 330px);
+    // column-gap: 18px;
   }
 
   @media (min-width: $desktop-width) {}

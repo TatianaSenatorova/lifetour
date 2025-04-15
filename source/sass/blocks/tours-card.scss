@@ -6,6 +6,13 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: $color-black-forest;
+
+  @media (min-width: $tablet-width) {
+    min-width: 330px;
+    max-width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .tours-card__image-wrap {
@@ -15,23 +22,26 @@
 
 .tours-card__image-wrap img {
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .tours-card__overlay {
   max-width: 100%;
   grid-area: 1 / 1 / 2 / 2;
   align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   padding: 30px 20px;
 }
 
 .tours-card__top-info {
-  margin-bottom: 15px;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 5px;
-  justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
@@ -41,9 +51,11 @@
 
 .tours-card__duration-wrap {
   margin: 0;
+  margin-top: 7px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 14px;
+  flex-wrap: wrap;
 }
 
 .tours-card__info {
@@ -53,6 +65,8 @@
   background-size: 20px 20px;
 
   &--place {
+    margin-top: 7px;
+    max-width: fit-content;
     background-color: $color-navy-blue;
     padding: 8px 12px 8px 34px;
     background-image: url("/__spritemap#sprite-map-marker-view");
@@ -76,7 +90,6 @@
 
 .tours-card__title {
   margin: 0;
-  margin-bottom: 15px;
   padding-bottom: 16px;
   font-size: 24px;
   font-weight: 700;
@@ -96,10 +109,11 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 84px 83px 1fr;
+  grid-template-columns: 84px auto auto;
+  justify-content: space-between;
+  column-gap: 7px;
   row-gap: 5px;
   color: $color-white;
-  column-gap: 8px;
   font-size: 12px;
   font-weight: 300;
   line-height: 1;

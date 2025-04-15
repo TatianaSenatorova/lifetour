@@ -5,8 +5,19 @@
       url("../../img/backgrounds/clouds-mobile-1@1x.jpg") type("image/jpeg") 1x,
       url("../../img/backgrounds/clouds-mobile-1@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px 302px, 100% 100%;
+  background-position: left calc(50vw + 19px) top 10px;
+  background-size: 346px 595px;
+
+  @media (min-width: 730px) {
+    background-image:
+      image-set(url("../../img/backgrounds/clouds-tablet-1@1x.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/clouds-tablet-1@2x.webp") type("image/webp") 2x,
+        url("../../img/backgrounds/clouds-tablet-1@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/backgrounds/clouds-tablet-1@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-position: right 0 top 150px;
+    background-size: 346px 595px;
+  }
 
   @media (min-width: $tablet-width) {
     background-image:
@@ -16,8 +27,7 @@
         url("../../img/backgrounds/clouds-tablet-1@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 320px 302px, 100% 100%;
-
+    background-size: 346px 595px;
   }
 
   @media (min-width: $desktop-width) {

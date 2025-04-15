@@ -5,7 +5,7 @@
   line-height: 1;
 
   &--with-shadow {
-    padding: 16px 0 17px;
+    padding: 19px 0 14px;
 
     &::after {
       content: attr(data-title) / "";
