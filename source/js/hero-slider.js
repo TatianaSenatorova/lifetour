@@ -1,7 +1,5 @@
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
-import { slides } from './dom-elements';
-console.log(slides);
 
 const className = 'hero__pagination-control';
 
@@ -32,11 +30,3 @@ const heroSwiper = new Swiper('.swiper-hero', {
   },
 });
 
-// const onFocusSlider = (index) => {
-// console.log(index);
-// changeActiveSlide(i);
-// }
-
-// heroSwiper.slides.forEach((slide, index) => {
-//   slide.addEventListener('focusin', () => onFocusSlider(index));
-// })
