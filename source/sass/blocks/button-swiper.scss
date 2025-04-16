@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
+  outline: none;
   padding: 8px;
   background-color: $color-navy-blue;
   color: $color-white;
@@ -33,12 +34,16 @@
 
   &:disabled {
     pointer-events: none;
+    color: $color-white;
     background-color: $color-nobel;
+    border: 1px solid transparent;
   }
 
   &--is-disabled {
     pointer-events: none;
+    color: $color-white;
     background-color: $color-nobel;
+    border: 1px solid transparent;
   }
 
   @media (min-width: $tablet-width) {

@@ -237,7 +237,7 @@
       </div>
     </section>
     <div class="wrapper-tours-traning">
-      <section class="tours" data-test="tours">
+      <section class="tours" data-test="tours" id="tours">
         <div class="container">
           <div class="tours__top-wrapper">
             <h2 class="tours__title section-title section-title--with-shadow" data-title="Ближайшие туры">Ближайшие туры
@@ -263,244 +263,243 @@
               </li>
             </ul>
           </div>
+
+          <div class="tours__slider swiper-tours">
+            <ul class="tours__slider-list swiper-wrapper">
+              <li class="tours__slider-item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrap">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-1@1x.webp 1x, img/tours-card-photos/tours-desktop-1@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
+                        srcset="img/tours-card-photos/tours-tablet-1@1x.webp 1x, img/tours-card-photos/tours-tablet-1@2x.webp 2x">
+                      <source type="image/webp" width="290" height="416"
+                        srcset="img/tours-card-photos/tours-mobile-1@1x.webp 1x, img/tours-card-photos/tours-mobile-1@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-1@1x.jpg 1x, img/tours-card-photos/tours-desktop-1@2x.jpg 2x">
+                      <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-tablet-1@1x.jpg 1x, img/tours-card-photos/tours-tablet-1@2x.jpg 2x">
+                      <img class="tours-card__image" src="img/tours-card-photos/tour-mobile-1@1x.jpg"
+                        srcset="img/tours-card-photos/tours-mobile-1@2x.jpg 2x" alt="Горы Кавказа" width="290"
+                        height="416">
+                    </picture>
+                  </div>
+                  <div class="tours-card__overlay">
+                    <div class="tours-card__top-info">
+                      <span class="tours-card__info tours-card__info--place">Кавказ</span>
+                      <p class="tours-card__duration-wrap">
+                        <span class="tours-card__info tours-card__info--days">4&nbsp;дня</span>
+                        <span class="tours-card__info tours-card__info--nights">3&nbsp;ночи</span>
+                      </p>
+                    </div>
+                    <a class="tours-card__link" href="#">
+                      <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h2>
+                    </a>
+                    <ul class="tours-card__list-conditions">
+                      <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
+                     Одна звезда - tours-card__conditions-item--one-level.
+                     Две звезды - tours-card__conditions-item--two-level.
+                     Три звезды - tours-card__conditions-item--three-level.
+                     Четыре звезды - tours-card__conditions-item--four-level.
+                     Пять звезд - tours-card__conditions-item--five-level.
+                     -->
+                      <li
+                        class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--four-level">
+                        <span class="tours-card__conditions-title">Сложность:</span>
+                        <span class="visually-hidden">Четвертый уровень сложности из пяти</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Даты набора:</span>
+                        <span class="tours-card__conditions-info">12.06&ndash;19.06</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Группа:</span>
+                        <span class="tours-card__conditions-info">до&nbsp;15&nbsp;чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </li>
+              <li class="tours__slider-item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrap">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-2@1x.webp 1x, img/tours-card-photos/tours-desktop-2@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
+                        srcset="img/tours-card-photos/tours-tablet-2@1x.webp 1x, img/tours-card-photos/tours-tablet-2@2x.webp 2x">
+                      <source type="image/webp" width="290" height="416"
+                        srcset="img/tours-card-photos/tours-mobile-2@1x.webp 1x, img/tours-card-photos/tours-mobile-2@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-2@1x.jpg 1x, img/tours-card-photos/tours-desktop-2@2x.jpg 2x">
+                      <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-tablet-2@1x.jpg 1x, img/tours-card-photos/tours-tablet-2@2x.jpg 2x">
+                      <img class="tours-card__image" src="img/tours-card-photos/tour--2@1x.jpg"
+                        srcset="img/tours-card-photos/tours-mobile-2@2x.jpg 2x" alt="Гора Белуха" width="290"
+                        height="416">
+                    </picture>
+                  </div>
+                  <div class="tours-card__overlay">
+                    <div class="tours-card__top-info">
+                      <span class="tours-card__info tours-card__info--place">Алтай</span>
+                      <p class="tours-card__duration-wrap">
+                        <span class="tours-card__info tours-card__info--days">14&nbsp;дней</span>
+                        <span class="tours-card__info tours-card__info--nights">13&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <a class="tours-card__link" href="#">
+                      <h3 class="tours-card__title">Путь к&nbsp;подножию Белухи</h2>
+                    </a>
+                    <ul class="tours-card__list-conditions">
+                      <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
+                     Одна звезда - tours-card__conditions-item--one-level.
+                     Две звезды - tours-card__conditions-item--two-level.
+                     Три звезды - tours-card__conditions-item--three-level.
+                     Четыре звезды - tours-card__conditions-item--four-level.
+                     Пять звезд - tours-card__conditions-item--five-level.
+                     -->
+                      <li
+                        class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--three-level">
+                        <span class="tours-card__conditions-title">Сложность:</span>
+                        <span class="visually-hidden">Третий уровень сложности из пяти</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Даты набора:</span>
+                        <span class="tours-card__conditions-info">14.06&ndash;23.06</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Группа:</span>
+                        <span class="tours-card__conditions-info">до&nbsp;25&nbsp;чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </li>
+              <li class="tours__slider-item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrap">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-3@1x.webp 1x, img/tours-card-photos/tours-desktop-3@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-3@1x.webp 1x, img/tours-card-photos/tours-desktop-3@2x.webp 2x">
+                      <source type="image/webp" width="290" height="416"
+                        srcset="img/tours-card-photos/tours-mobile-3@1x.webp 1x, img/tours-card-photos/tours-mobile-3@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-3@1x.jpg 1x, img/tours-card-photos/tours-desktop-3@2x.jpg 2x">
+                      <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-3@1x.jpg 1x, img/tours-card-photos/tours-desktop-3@2x.jpg 2x">
+                      <img class="tours-card__image" src="img/tours-card-photos/tours-mobile-3@1x.jpg"
+                        srcset="img/tours-card-photos/tour-mobile-3@2x.jpg 2x" alt="Гора Фишт" width="290" height="416">
+                    </picture>
+                  </div>
+                  <div class="tours-card__overlay">
+                    <div class="tours-card__top-info">
+                      <span class="tours-card__info tours-card__info--place">Адыгея</span>
+                      <p class="tours-card__duration-wrap">
+                        <span class="tours-card__info tours-card__info--days">7&nbsp;дней</span>
+                        <span class="tours-card__info tours-card__info--nights">6&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <a class="tours-card__link" href="#">
+                      <h3 class="tours-card__title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h2>
+                    </a>
+                    <ul class="tours-card__list-conditions">
+                      <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
+                     Одна звезда - tours-card__conditions-item--one-level.
+                     Две звезды - tours-card__conditions-item--two-level.
+                     Три звезды - tours-card__conditions-item--three-level.
+                     Четыре звезды - tours-card__conditions-item--four-level.
+                     Пять звезд - tours-card__conditions-item--five-level.
+                     -->
+                      <li
+                        class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--four-level">
+                        <span class="tours-card__conditions-title">Сложность:</span>
+                        <span class="visually-hidden">Четвертый уровень сложности из пяти</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Даты набора:</span>
+                        <span class="tours-card__conditions-info">15.07&ndash;19.07</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Группа:</span>
+                        <span class="tours-card__conditions-info">до&nbsp;22&nbsp;чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </li>
+              <li class="tours__slider-item swiper-slide">
+                <article class="tours-card">
+                  <div class="tours-card__image-wrap">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-4@1x.webp 1x, img/tours-card-photos/tours-desktop-4@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
+                        srcset="img/tours-card-photos/tours-desktop-4@1x.webp 1x, img/tours-card-photos/tours-desktop-4@2x.webp 2x">
+                      <source type="image/webp" width="290" height="416"
+                        srcset="img/tours-card-photos/tours-mobile-4@1x.webp 1x, img/tours-card-photos/tours-mobile-4@2x.webp 2x">
+
+                      <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-4@1x.jpg 1x, img/tours-card-photos/tours-desktop-4@2x.jpg 2x">
+                      <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
+                        srcset="img/tours-card-photos/tours-desktop-4@1x.jpg 1x, img/tours-card-photos/tours-desktop-4@2x.jpg 2x">
+                      <img class="tours-card__image" src="img/tours-card-photos/tours-mobile-4@1x.jpg"
+                        srcset="img/tours-card-photos/tours-mobile-4@2x.jpg 2x" alt="Гора Манарага" width="290"
+                        height="416">
+                    </picture>
+                  </div>
+                  <div class="tours-card__overlay">
+                    <div class="tours-card__top-info">
+                      <span class="tours-card__info tours-card__info--place">Урал</span>
+                      <p class="tours-card__duration-wrap">
+                        <span class="tours-card__info tours-card__info--days">9&nbsp;дней</span>
+                        <span class="tours-card__info tours-card__info--nights">10&nbsp;ночей</span>
+                      </p>
+                    </div>
+                    <a class="tours-card__link" href="#">
+                      <h3 class="tours-card__title">Восхождение Манарага</h2>
+                    </a>
+                    <ul class="tours-card__list-conditions">
+                      <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
+                     Одна звезда - tours-card__conditions-item--one-level.
+                     Две звезды - tours-card__conditions-item--two-level.
+                     Три звезды - tours-card__conditions-item--three-level.
+                     Четыре звезды - tours-card__conditions-item--four-level.
+                     Пять звезд - tours-card__conditions-item--five-level.
+                     -->
+                      <li
+                        class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--five-level">
+                        <span class="tours-card__conditions-title">Сложность:</span>
+                        <span class="visually-hidden">Пятый уровень сложности из пяти</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Даты набора:</span>
+                        <span class="tours-card__conditions-info">12.07&ndash;19.07</span>
+                      </li>
+                      <li class="tours-card__conditions-item">
+                        <span class="tours-card__conditions-title">Группа:</span>
+                        <span class="tours-card__conditions-info">до&nbsp;7&nbsp;чел.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </li>
+
+            </ul>
+          </div>
+          <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
+          <a class="tours__button-secondary button-secondary" href="#">Показать все туры
+            <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
+              <use href="/__spritemap#sprite-arrow-right"></use>
+            </svg>
+          </a>
         </div>
-        <div class="tours__slider swiper-tours">
-          <ul class="tours__slider-list swiper-wrapper">
-            <li class="tours__slider-item swiper-slide">
-              <article class="tours-card">
-                <div class="tours-card__image-wrap">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-1@1x.webp 1x, img/tours-card-photos/tours-desktop-1@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
-                      srcset="img/tours-card-photos/tours-tablet-1@1x.webp 1x, img/tours-card-photos/tours-tablet-1@2x.webp 2x">
-                    <source type="image/webp" width="290" height="416"
-                      srcset="img/tours-card-photos/tours-mobile-1@1x.webp 1x, img/tours-card-photos/tours-mobile-1@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-1@1x.jpg 1x, img/tours-card-photos/tours-desktop-1@2x.jpg 2x">
-                    <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-tablet-1@1x.jpg 1x, img/tours-card-photos/tours-tablet-1@2x.jpg 2x">
-                    <img class="tours-card__image" src="img/tours-card-photos/tour-mobile-1@1x.jpg"
-                      srcset="img/tours-card-photos/tours-mobile-1@2x.jpg 2x" alt="Горы Кавказа" width="290"
-                      height="416">
-                  </picture>
-                </div>
-                <div class="tours-card__overlay">
-                  <div class="tours-card__top-info">
-                    <span class="tours-card__info tours-card__info--place">Кавказ</span>
-                    <p class="tours-card__duration-wrap">
-                      <span class="tours-card__info tours-card__info--days">4&nbsp;дня</span>
-                      <span class="tours-card__info tours-card__info--nights">3&nbsp;ночи</span>
-                    </p>
-                  </div>
-                  <a class="tours-card__link" href="#">
-                    <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h2>
-                  </a>
-                  <ul class="tours-card__list-conditions">
-                    <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
-                     Одна звезда - tours-card__conditions-item--one-level.
-                     Две звезды - tours-card__conditions-item--two-level.
-                     Три звезды - tours-card__conditions-item--three-level.
-                     Четыре звезды - tours-card__conditions-item--four-level.
-                     Пять звезд - tours-card__conditions-item--five-level.
-                     -->
-                    <li
-                      class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--four-level">
-                      <span class="tours-card__conditions-title">Сложность:</span>
-                      <span class="visually-hidden">Четвертый уровень сложности из пяти</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Даты набора:</span>
-                      <span class="tours-card__conditions-info">12.06&ndash;19.06</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Группа:</span>
-                      <span class="tours-card__conditions-info">до&nbsp;15&nbsp;чел.</span>
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-            <li class="tours__slider-item swiper-slide">
-              <article class="tours-card">
-                <div class="tours-card__image-wrap">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-2@1x.webp 1x, img/tours-card-photos/tours-desktop-2@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
-                      srcset="img/tours-card-photos/tours-tablet-2@1x.webp 1x, img/tours-card-photos/tours-tablet-2@2x.webp 2x">
-                    <source type="image/webp" width="290" height="416"
-                      srcset="img/tours-card-photos/tours-mobile-2@1x.webp 1x, img/tours-card-photos/tours-mobile-2@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-2@1x.jpg 1x, img/tours-card-photos/tours-desktop-2@2x.jpg 2x">
-                    <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-tablet-2@1x.jpg 1x, img/tours-card-photos/tours-tablet-2@2x.jpg 2x">
-                    <img class="tours-card__image" src="img/tours-card-photos/tour--2@1x.jpg"
-                      srcset="img/tours-card-photos/tours-mobile-2@2x.jpg 2x" alt="Гора Белуха" width="290"
-                      height="416">
-                  </picture>
-                </div>
-                <div class="tours-card__overlay">
-                  <div class="tours-card__top-info">
-                    <span class="tours-card__info tours-card__info--place">Алтай</span>
-                    <p class="tours-card__duration-wrap">
-                      <span class="tours-card__info tours-card__info--days">14&nbsp;дней</span>
-                      <span class="tours-card__info tours-card__info--nights">13&nbsp;ночей</span>
-                    </p>
-                  </div>
-                  <a class="tours-card__link" href="#">
-                    <h3 class="tours-card__title">Путь к&nbsp;подножию Белухи</h2>
-                  </a>
-                  <ul class="tours-card__list-conditions">
-                    <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
-                     Одна звезда - tours-card__conditions-item--one-level.
-                     Две звезды - tours-card__conditions-item--two-level.
-                     Три звезды - tours-card__conditions-item--three-level.
-                     Четыре звезды - tours-card__conditions-item--four-level.
-                     Пять звезд - tours-card__conditions-item--five-level.
-                     -->
-                    <li
-                      class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--three-level">
-                      <span class="tours-card__conditions-title">Сложность:</span>
-                      <span class="visually-hidden">Третий уровень сложности из пяти</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Даты набора:</span>
-                      <span class="tours-card__conditions-info">14.06&ndash;23.06</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Группа:</span>
-                      <span class="tours-card__conditions-info">до&nbsp;25&nbsp;чел.</span>
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-            <li class="tours__slider-item swiper-slide">
-              <article class="tours-card">
-                <div class="tours-card__image-wrap">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-3@1x.webp 1x, img/tours-card-photos/tours-desktop-3@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-3@1x.webp 1x, img/tours-card-photos/tours-desktop-3@2x.webp 2x">
-                    <source type="image/webp" width="290" height="416"
-                      srcset="img/tours-card-photos/tours-mobile-3@1x.webp 1x, img/tours-card-photos/tours-mobile-3@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-3@1x.jpg 1x, img/tours-card-photos/tours-desktop-3@2x.jpg 2x">
-                    <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-3@1x.jpg 1x, img/tours-card-photos/tours-desktop-3@2x.jpg 2x">
-                    <img class="tours-card__image" src="img/tours-card-photos/tours-mobile-3@1x.jpg"
-                      srcset="img/tours-card-photos/tour-mobile-3@2x.jpg 2x" alt="Гора Фишт" width="290"
-                      height="416">
-                  </picture>
-                </div>
-                <div class="tours-card__overlay">
-                  <div class="tours-card__top-info">
-                    <span class="tours-card__info tours-card__info--place">Адыгея</span>
-                    <p class="tours-card__duration-wrap">
-                      <span class="tours-card__info tours-card__info--days">7&nbsp;дней</span>
-                      <span class="tours-card__info tours-card__info--nights">6&nbsp;ночей</span>
-                    </p>
-                  </div>
-                  <a class="tours-card__link" href="#">
-                    <h3 class="tours-card__title">Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h2>
-                  </a>
-                  <ul class="tours-card__list-conditions">
-                    <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
-                     Одна звезда - tours-card__conditions-item--one-level.
-                     Две звезды - tours-card__conditions-item--two-level.
-                     Три звезды - tours-card__conditions-item--three-level.
-                     Четыре звезды - tours-card__conditions-item--four-level.
-                     Пять звезд - tours-card__conditions-item--five-level.
-                     -->
-                    <li
-                      class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--four-level">
-                      <span class="tours-card__conditions-title">Сложность:</span>
-                      <span class="visually-hidden">Четвертый уровень сложности из пяти</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Даты набора:</span>
-                      <span class="tours-card__conditions-info">15.07&ndash;19.07</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Группа:</span>
-                      <span class="tours-card__conditions-info">до&nbsp;22&nbsp;чел.</span>
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-            <li class="tours__slider-item swiper-slide">
-              <article class="tours-card">
-                <div class="tours-card__image-wrap">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" width="380" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-4@1x.webp 1x, img/tours-card-photos/tours-desktop-4@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" width="330" height="416"
-                      srcset="img/tours-card-photos/tours-desktop-4@1x.webp 1x, img/tours-card-photos/tours-desktop-4@2x.webp 2x">
-                    <source type="image/webp" width="290" height="416"
-                      srcset="img/tours-card-photos/tours-mobile-4@1x.webp 1x, img/tours-card-photos/tours-mobile-4@2x.webp 2x">
-
-                    <source media="(min-width: 1440px)" width="380" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-4@1x.jpg 1x, img/tours-card-photos/tours-desktop-4@2x.jpg 2x">
-                    <source media="(min-width: 768px)" width="330" height="416" type="image/jpeg"
-                      srcset="img/tours-card-photos/tours-desktop-4@1x.jpg 1x, img/tours-card-photos/tours-desktop-4@2x.jpg 2x">
-                    <img class="tours-card__image" src="img/tours-card-photos/tours-mobile-4@1x.jpg"
-                      srcset="img/tours-card-photos/tours-mobile-4@2x.jpg 2x" alt="Гора Манарага" width="290"
-                      height="416">
-                  </picture>
-                </div>
-                <div class="tours-card__overlay">
-                  <div class="tours-card__top-info">
-                    <span class="tours-card__info tours-card__info--place">Урал</span>
-                    <p class="tours-card__duration-wrap">
-                      <span class="tours-card__info tours-card__info--days">9&nbsp;дней</span>
-                      <span class="tours-card__info tours-card__info--nights">10&nbsp;ночей</span>
-                    </p>
-                  </div>
-                  <a class="tours-card__link" href="#">
-                    <h3 class="tours-card__title">Восхождение Манарага</h2>
-                  </a>
-                  <ul class="tours-card__list-conditions">
-                    <!-- Для верного отображения закрашенных звезд - уровня сложности - добаляется класс-модификатор к элементу tours-card__conditions-item.
-                     Одна звезда - tours-card__conditions-item--one-level.
-                     Две звезды - tours-card__conditions-item--two-level.
-                     Три звезды - tours-card__conditions-item--three-level.
-                     Четыре звезды - tours-card__conditions-item--four-level.
-                     Пять звезд - tours-card__conditions-item--five-level.
-                     -->
-                    <li
-                      class="tours-card__conditions-item tours-card__conditions-item--complicity tours-card__conditions-item--five-level">
-                      <span class="tours-card__conditions-title">Сложность:</span>
-                      <span class="visually-hidden">Пятый уровень сложности из пяти</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Даты набора:</span>
-                      <span class="tours-card__conditions-info">12.07&ndash;19.07</span>
-                    </li>
-                    <li class="tours-card__conditions-item">
-                      <span class="tours-card__conditions-title">Группа:</span>
-                      <span class="tours-card__conditions-info">до&nbsp;7&nbsp;чел.</span>
-                    </li>
-                  </ul>
-                </div>
-              </article>
-            </li>
-
-          </ul>
-        </div>
-        <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
-        <a class="tours__button-secondary button-secondary" href="#">Показать все туры
-          <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
-            <use href="/__spritemap#sprite-arrow-right"></use>
-          </svg>
-        </a>
     </div>
-
     </section>
     </div>
 

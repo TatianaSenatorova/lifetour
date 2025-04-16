@@ -12,15 +12,15 @@ const heroSwiper = new Swiper('.swiper-tours', {
       slidesPerView: 2,
       spaceBetween: 18,
     },
-    
+
     1440: {
       slidesPerView: 3,
     }
   },
 
   navigation: {
-    nextEl: '.swiper-button-tour-prev',
-    prevEl: '.swiper-button-tour-next'
+    nextEl: '.swiper-button-tour-next',
+    prevEl: '.swiper-button-tour-prev'
   },
 });
 
