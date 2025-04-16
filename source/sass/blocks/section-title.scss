@@ -5,13 +5,13 @@
   line-height: 1;
 
   &--with-shadow {
-    padding: 19px 0 14px;
+    padding-top: 19px;
 
     &::after {
       content: attr(data-title) / "";
       display: block;
       position: absolute;
-      top: 0;
+      bottom: 10px;
       left: 0;
       font-size: 26px;
       font-weight: 800;
@@ -19,6 +19,31 @@
       word-break: break-all;
       opacity: 0.03;
       transform: translateZ(-1px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+
+    &--with-shadow {
+      padding: 20px 0 10px;
+    }
+
+    &--with-shadow::after {
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+
+    &--with-shadow {
+      padding: 19px 0 1px;
+    }
+
+    &--with-shadow::after {
+      font-size: 55px;
+      bottom: 0;
     }
   }
 }

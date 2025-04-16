@@ -11,7 +11,10 @@
     max-width: 330px;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    min-width: 380px;
+    max-width: 380px;
+  }
 }
 
 .tours-card__image-wrap {

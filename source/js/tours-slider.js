@@ -15,6 +15,7 @@ const heroSwiper = new Swiper('.swiper-tours', {
 
     1440: {
       slidesPerView: 3,
+      spaceBetween: 30,
     }
   },
 

@@ -37,6 +37,15 @@
     color: $color-nobel;
     pointer-events: none;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .button-secondary__arrow {

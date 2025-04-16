@@ -5,7 +5,9 @@
     padding: 40px 0;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 }
 
 .tours__slider {
@@ -16,11 +18,16 @@
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .tours__title {
   margin: 0;
-  margin-bottom: 25px;
+  width: 100%;
 }
 
 .tours__buttons-list {
@@ -32,6 +39,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 4px;
+    align-self: flex-end;
   }
 
   @media (min-width: $desktop-width) {}
@@ -45,11 +53,12 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    // grid-template-columns: repeat(2, 330px);
-    // column-gap: 18px;
+
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .tours__slider-item {
@@ -59,6 +68,6 @@
 }
 
 .tours__button-secondary {
-  width: 212px;
+  width: fit-content;
   margin: 0 auto;
 }
