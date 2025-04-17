@@ -48,18 +48,6 @@
   }
 }
 
-.training__title-with-navigation {
-  margin-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-      margin-bottom: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
-  }
-}
-
 .training__list-title {
   margin: 0;
   font-size: 22px;

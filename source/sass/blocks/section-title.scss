@@ -3,21 +3,16 @@
   font-weight: 800;
   line-height: 1;
   word-break: break-word;
-  // vertical-align: baseline;
 
   &--with-shadow {
     position: relative;
-    // display: flex;
-    // min-height: 55px;
-    // align-items: baseline;
-    // gap: -345px;
-    // flex: 1 0 0;
+    padding-top: 20px;
 
     &::after {
       content: attr(data-title) / "";
-         display: block;
+      display: block;
       position: absolute;
-      bottom: 0;
+      bottom: 12px;
       left: 0;
       font-size: 26px;
       font-weight: 800;
@@ -37,6 +32,7 @@
 
     &--with-shadow::after {
       font-size: 40px;
+      bottom: 0;
     }
   }
 

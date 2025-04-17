@@ -239,28 +239,10 @@
     <div class="wrapper-tours-traning">
       <section class="tours" data-test="tours" id="tours">
         <div class="container">
-          <div class="tours__title-with-navigation title-with-navigation">
-            <h2 class="tours__title section-title section-title--with-shadow" data-title="Ближайшие туры"><span>Ближайшие туры</span>
-            </h2>
-            <ul class="tours__buttons-swiper-list buttons-swiper-list">
-              <li>
-                <button class="button-swiper swiper-button-tour-prev" type="button">
-                  <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="button-swiper button-swiper--next swiper-button-tour-next" type="button">
-                  <span class="visually-hidden">Посмотреть следующий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
+          <div class="tours__wrapper">
+          <h2 class="tours__title section-title section-title--with-shadow" data-title="Ближайшие туры"><span>Ближайшие
+              туры</span>
+          </h2>
           <div class="tours__slider swiper-tours">
             <ul class="tours__slider-list swiper-wrapper">
               <li class="tours__slider-item swiper-slide">
@@ -489,6 +471,24 @@
 
             </ul>
           </div>
+          <ul class="tours__buttons-swiper-list buttons-swiper-list">
+            <li>
+              <button class="button-swiper swiper-button-tour-prev" type="button">
+                <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button-swiper button-swiper--next swiper-button-tour-next" type="button">
+                <span class="visually-hidden">Посмотреть следующий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
           <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
           <a class="tours__button-secondary button-secondary" href="#">Показать все туры
             <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
@@ -496,6 +496,7 @@
             </svg>
           </a>
         </div>
+      </div>
       </section>
       <section class="training" data-test="training" id="training">
         <div class="container">
@@ -504,27 +505,7 @@
             <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных
               маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
           </div>
-          <div class="training__title-with-navigation title-with-navigation">
-            <h3 class="training__list-title">Наши инструкторы</h3>
-            <ul class="training__buttons-swiper-list buttons-swiper-list">
-              <li>
-                <button class="button-swiper swiper-button-training-prev" type="button">
-                  <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="button-swiper button-swiper--next swiper-button-training-next" type="button">
-                  <span class="visually-hidden">Посмотреть следующий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
+          <h3 class="training__list-title">Наши инструкторы</h3>
           <div class="training__slider swiper-training">
             <ul class="training__slider-list swiper-wrapper">
               <li class="training__slider-item swiper-slide">
@@ -753,6 +734,24 @@
 
             </ul>
           </div>
+          <ul class="training__buttons-swiper-list buttons-swiper-list">
+            <li>
+              <button class="button-swiper swiper-button-training-prev" type="button">
+                <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button-swiper button-swiper--next swiper-button-training-next" type="button">
+                <span class="visually-hidden">Посмотреть следующий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
           <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
           <a class="tours__button-secondary button-secondary" href="#">Показать все туры
             <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
@@ -762,11 +761,9 @@
         </div>
       </section>
     </div>
-
   </main>
   <footer class="main-footer">
     <div class="container">
-
     </div>
   </footer>
 
