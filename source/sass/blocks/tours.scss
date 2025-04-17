@@ -10,19 +10,23 @@
   }
 }
 
-.tours__buttons-swiper-list {
-  align-self: flex-end;
-}
+// .tours__buttons-swiper-list {
+//   align-self: flex-end;
+// }
 
 .tours__slider {
   overflow: hidden;
 }
 
 .tours__title-with-navigation {
-  margin-bottom: 25px;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
+    margin-bottom: 44px;
   }
 }
 

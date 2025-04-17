@@ -1,18 +1,23 @@
 .section-title {
-  position: relative;
   font-size: 22px;
   font-weight: 800;
   line-height: 1;
   word-break: break-word;
+  // vertical-align: baseline;
 
   &--with-shadow {
-    padding-top: 19px;
+    position: relative;
+    // display: flex;
+    // min-height: 55px;
+    // align-items: baseline;
+    // gap: -345px;
+    // flex: 1 0 0;
 
     &::after {
       content: attr(data-title) / "";
-      display: block;
+         display: block;
       position: absolute;
-      bottom: 10px;
+      bottom: 0;
       left: 0;
       font-size: 26px;
       font-weight: 800;
@@ -27,7 +32,7 @@
     font-size: 25px;
 
     &--with-shadow {
-      padding: 20px 0 10px;
+      // padding: 20px 0 10px;
     }
 
     &--with-shadow::after {
@@ -39,12 +44,12 @@
     font-size: 35px;
 
     &--with-shadow {
-      padding: 19px 0 1px;
+      // padding: 23px 0 10px;
     }
 
     &--with-shadow::after {
       font-size: 55px;
-      bottom: 0;
+      // bottom: 0;
     }
   }
 }

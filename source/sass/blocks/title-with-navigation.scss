@@ -1,5 +1,8 @@
 .title-with-navigation {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  min-height: 55px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  // justify-content: space-between;
+  align-items: flex-end;
+  // gap: 10px;
 }
