@@ -1,0 +1,62 @@
+.training-card {
+  min-width: 290px;
+  max-width: 290px;
+  min-height: 356px;
+  margin: 0 auto;
+  padding: 15px;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+
+  @media (min-width: $tablet-width) {}
+
+  @media (min-width: $desktop-width) {}
+}
+
+.training-card__content {
+  display: grid;
+  grid-template-columns: 1fr 32px;
+}
+
+.training-card__link {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  padding-left: 8px;
+  padding-bottom: 8px;
+  color: $color-elephant;
+
+  &--is-disabled {
+    pointer-events: none;
+  }
+}
+
+.training-card__svg-wrapper {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  transition: border-color 0.3s;
+
+  .training-card__link:hover & {
+    border-color: $color-elephant;
+  }
+
+  .training-card__link:focus & {
+    border-color: transparent;
+  }
+
+  .training-card__link:active & {
+    border-color: transparent;
+    background-color: $color-navy-blue;
+    color: $color-white;
+  }
+
+  .training-card__link--is-disabled & {
+    color: rgba(45, 56, 63, 0.3);
+  }
+}
+
+.training-card__svg-wrapper svg {
+  display: block;
+}
