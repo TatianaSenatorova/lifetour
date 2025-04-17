@@ -5,17 +5,17 @@ const heroSwiper = new Swiper('.swiper-training', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 1,
-  initialSlide: 0,
+  initialSlide: 2,
 
   breakpoints: {
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      initialSlide: 0,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
 
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4,
     }
   },
 
