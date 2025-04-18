@@ -53,6 +53,15 @@
 
 .training__slider-content {
   position: relative;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .training__list-title {
