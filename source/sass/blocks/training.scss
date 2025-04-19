@@ -1,30 +1,30 @@
 .training {
-  padding: 20px 0;
+  padding: 17px 0;
 
   @media (min-width: $tablet-width) {
     padding: 40px 0;
     background-image:
-    image-set(url("../../img/backgrounds/clouds-tablet-2@1x.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-tablet-2@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-tablet-2@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/backgrounds/clouds-tablet-2@2x.jpg") type("image/jpeg") 2x);
-  background-repeat: no-repeat;
-  background-position: left calc(50vw - 81px) bottom 158px;
-  background-size: 840px 280px;
+      image-set(url("../../img/backgrounds/clouds-tablet-2@1x.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/clouds-tablet-2@2x.webp") type("image/webp") 2x,
+        url("../../img/backgrounds/clouds-tablet-2@1x.jpg") type("image/jpeg") 1x,
+        url("../../img/backgrounds/clouds-tablet-2@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-position: left calc(50vw - 81px) bottom 158px;
+    background-size: 840px 280px;
   }
 
   @media (min-width: $desktop-width) {
-  background-position: left calc(50vw + 87px) bottom -4px;
-   }
+    background-position: left calc(50vw + 87px) bottom -4px;
+  }
 }
 
 .training__title {
   margin: 0;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
 }
 
 .training__top-content {
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -63,10 +63,6 @@
   position: relative;
   margin-bottom: 25px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 25px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
   }
@@ -74,13 +70,14 @@
 
 .training__slider-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   font-size: 22px;
   font-weight: 800;
   line-height: 1;
   align-self: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 36px;
     font-size: 25px;
   }
 
@@ -90,10 +87,9 @@
   }
 }
 
-
 .training__buttons-swiper-list {
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
 }
 
@@ -113,7 +109,7 @@
 
 .training__learning-title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
@@ -158,9 +154,9 @@
 
   &:first-child {
     background-image:
-      linear-gradient(to bottom, $color-white 11px, transparent 11px),
+      linear-gradient(to bottom, $color-white 14px, transparent 14px),
       linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
-    background-size: 14px 11px, 14px 100%;
+    // background-size: 14px 11px, 14px 100%;
   }
 
   &:last-child {
@@ -173,7 +169,7 @@
   &::after {
     content: '';
     position: absolute;
-    top: 11px;
+    top: 12px;
     left: 0;
     width: 14px;
     height: 14px;
@@ -218,14 +214,14 @@
     background-size: 100% 2px;
 
     &:first-child {
-      background-image:linear-gradient(to right, $color-white 20px, $color-navy-blue 20px);
+      background-image: linear-gradient(to right, $color-white 20px, $color-navy-blue 20px);
       background-size: 100% 2px;
       background-position: left 0 bottom 14px;
       background-repeat: no-repeat;
     }
 
     &:last-child {
-      background-image:linear-gradient(to right, $color-navy-blue 20px);
+      background-image: linear-gradient(to right, $color-navy-blue 20px);
       background-size: 100% 2px;
       background-position: left 0 bottom 14px;
       background-repeat: no-repeat;
@@ -254,4 +250,3 @@
     }
   }
 }
-

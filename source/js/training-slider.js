@@ -15,6 +15,7 @@ const heroSwiper = new Swiper('.swiper-training', {
     },
 
     1440: {
+      initialSlide: 0,
       slidesPerView: 4,
     }
   },
