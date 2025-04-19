@@ -4,10 +4,6 @@
   @media (min-width: $tablet-width) {
     padding: 40px 0;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 100px 0;
-  }
 }
 
 .training__title {
@@ -64,7 +60,7 @@
   }
 }
 
-.training__list-title {
+.training__slider-title {
   margin: 0;
   margin-bottom: 25px;
   font-size: 22px;
@@ -102,3 +98,148 @@
 .training__slider-item {
   height: auto;
 }
+
+.training__learning-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
+}
+
+.training__learning-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 232px 272px;
+    justify-content: space-between;
+    gap: 104px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 253px) 1fr;
+    gap: unset;
+    justify-content: unset;
+  }
+}
+
+.training__learning-item {
+  position: relative;
+  padding-left: 14px;
+  background-image:
+    linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0;
+
+  &:first-child {
+    background-image:
+      linear-gradient(to bottom, $color-white 11px, transparent 11px),
+      linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
+    background-size: 14px 11px, 14px 100%;
+  }
+
+  &:last-child {
+    background-image:
+      linear-gradient(to bottom, transparent 25px, $color-white 26px),
+      linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
+    background-size: 14px 100%, 14px 100%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-navy-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: unset;
+    padding-left: 0;
+
+    &:first-child {
+      background: unset;
+    }
+
+    &:last-child {
+      background: unset;
+    }
+
+    &:has(.learning-card--equipment) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &:has(.learning-card--ecology) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
+    padding-top: 8px;
+    background-image:
+      linear-gradient(to right, $color-navy-blue);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 14px;
+    background-size: 100% 2px;
+
+    &:first-child {
+      background-image:linear-gradient(to right, $color-white 20px, $color-navy-blue 20px);
+      background-size: 100% 2px;
+      background-position: left 0 bottom 14px;
+      background-repeat: no-repeat;
+    }
+
+    &:last-child {
+      background-image:linear-gradient(to right, $color-navy-blue 20px);
+      background-size: 100% 2px;
+      background-position: left 0 bottom 14px;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      display: block;
+      top: unset;
+      bottom: 8px;
+      left: 20px;
+    }
+
+    &:has(.learning-card--ecology) {
+      grid-column: unset;
+      grid-row: unset;
+      left: 0;
+    }
+
+    &:has(.learning-card--circle-different)::after {
+      left: 0;
+    }
+
+    &:has(.learning-card--equipment) {
+      grid-column: unset;
+      grid-row: unset;
+    }
+  }
+}
+
