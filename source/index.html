@@ -240,10 +240,7 @@
       <section class="tours" data-test="tours" id="tours">
         <div class="container">
           <div class="tours__wrapper">
-            <h2 class="tours__title section-title" data-title="Ближайшие туры">
-              <span>Ближайшие
-                туры</span>
-            </h2>
+            <h2 class="tours__title section-title" data-title="Ближайшие туры">Ближайшие туры</h2>
             <div class="tours__slider swiper-tours">
               <ul class="tours__slider-list swiper-wrapper">
                 <li class="tours__slider-item swiper-slide">
@@ -770,6 +767,45 @@
         </div>
       </div>
     </section>
+    <section class="reviews" data-test="reviews" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title section-title" data-title="Ближайшие туры">Отзывы</h2>
+        <div class="reviews__slider swiper-reviews">
+          <ul class="reviews__slider-list swiper-wrapper">
+            <li class="reviews__slider-item swiper-slide">
+              <article class="review-card">
+                <div class="review-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="1440" height="800"
+                      srcset="img/hero-slides/hero-desktop-slide-1@1x.webp 1x, img/hero-slides/hero-desktop-slide-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="768" height="1034"
+                      srcset="img/hero-slides/hero-tablet-slide-1@1x.webp 1x, img/hero-slides/hero-tablet-slide-1@2x.webp 2x">
+                    <source type="image/webp" width="320" height="568"
+                      srcset="img/hero-slides/hero-mobile-slide-1@1x.webp 1x, img/hero-slides/hero-mobile-slide-1@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpeg"
+                      srcset="img/hero-slides/hero-desktop-slide-1@1x.jpg 1x, img/hero-slides/hero-desktop-slide-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="768" height="1034" type="image/jpeg"
+                      srcset="img/hero-slides/hero-tablet-slide-1@1x.jpg 1x, img/hero-slides/hero-tablet-slide-1@2x.jpg 2x">
+                    <img class="reviews-card__image" src="img/hero-slides/hero-mobile-slide-1@1x.jpg"
+                      srcset="img/hero-slides/hero-mobile-slide-1@2x.jpg 2x" alt="Фролов Александр" width="320"
+                      height="568">
+                  </picture>
+                </div>
+                <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы,
+                  настоящие эксперты, всему научили, все показали. Делились историями о&nbsp;местах, людях, культуре
+                  места.
+                  С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё
+                  никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                <h3>Фролов Александр</h3>
+                <span>38&nbsp;лет, Москва</span>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer class="main-footer">
     <div class="container">
