@@ -3,17 +3,29 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  &--wide {
+    padding: 0;
+  }
+
+  &--without-left-padding {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 45px;
+
+    &--without-left-padding {
+      padding: 0 45px 0 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
     padding: 0 120px;
-  }
 
-  &--wide {
-    padding: 0;
+    &--without-left-padding {
+      padding: 0 120px 0 0;
+    }
   }
 }
