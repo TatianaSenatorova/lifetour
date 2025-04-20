@@ -240,7 +240,7 @@
       <section class="tours" data-test="tours" id="tours">
         <div class="container">
           <div class="tours__wrapper">
-            <h2 class="tours__title section-title section-title--with-shadow" data-title="Ближайшие туры">
+            <h2 class="tours__title section-title" data-title="Ближайшие туры">
               <span>Ближайшие
                 туры</span>
             </h2>
@@ -503,7 +503,7 @@
       <section class="training" data-test="training" id="training">
         <div class="container">
           <div class="training__top-content">
-            <h2 class="training__title section-title section-title--with-shadow" data-title="Обучение">Обучение</h2>
+            <h2 class="training__title section-title" data-title="Обучение">Обучение</h2>
             <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами&nbsp;которых десятки пройденных
               маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
           </div>
@@ -735,33 +735,38 @@
     </div>
     <section class="about" data-test="about" id="about">
       <div class="container container--without-left-padding">
-        <div class="about__image-wrap">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" width="660" height="498"
-              srcset="img/about-photos/about-desktop@1x.webp 1x, img/about-photos/about-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" width="450" height="350"
-              srcset="img/about-photos/about-tablet@1x.webp 1x, img/about-photos/about-tablet@2x.webp 2x">
-            <source type="image/webp" width="320" height="400"
-              srcset="img/about-photos/about-mobile@1x.webp 1x, img/about-photos/about-mobile@2x.webp 2x">
+        <div class="about__wrapper">
+          <div class="about__image-wrap">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" width="660" height="498"
+                srcset="img/about-photos/about-desktop@1x.webp 1x, img/about-photos/about-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="450" height="350"
+                srcset="img/about-photos/about-tablet@1x.webp 1x, img/about-photos/about-tablet@2x.webp 2x">
+              <source type="image/webp" width="320" height="400"
+                srcset="img/about-photos/about-mobile@1x.webp 1x, img/about-photos/about-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1440px)" width="660" height="498" type="image/jpeg"
-              srcset="img/about-photos/about-desktop@1x.jpg 1x, img/about-photos/about-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" width="450" height="350" type="image/jpeg"
-              srcset="img/about-photos/about-tablet@1x.jpg 1x, img/about-photos/about-tablet@2x.jpg 2x">
-            <img class="about-card__image" src="img/about-photos/about-mobile@1x.jpg"
-              srcset="img/about-photos/about-mobile@2x.jpg 2x" alt="Группа во время похода" width="320" height="400">
-          </picture>
-        </div>
-        <div class="about__content">
-          <h2 data-title="О нас">О&nbsp;нас</h2>
-          <h3>История компании</h3>
-          <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам
-            это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали
-            компанию, чтобы показывать людям удивительные места нашей страны.</p>
-          <h3>Наша цель</h3>
-          <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя все
-            организационные вопросы. При организации мы&nbsp;обязательно учтём все ваши пожелания. Вам останется только
-            наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+              <source media="(min-width: 1440px)" width="660" height="498" type="image/jpeg"
+                srcset="img/about-photos/about-desktop@1x.jpg 1x, img/about-photos/about-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="450" height="350" type="image/jpeg"
+                srcset="img/about-photos/about-tablet@1x.jpg 1x, img/about-photos/about-tablet@2x.jpg 2x">
+              <img class="about-card__image" src="img/about-photos/about-mobile@1x.jpg"
+                srcset="img/about-photos/about-mobile@2x.jpg 2x" alt="Группа во время похода" width="320" height="400">
+            </picture>
+          </div>
+          <div class="about__content">
+            <h2 data-title="О нас">О&nbsp;нас</h2>
+            <h3>История компании</h3>
+            <p>В&nbsp;далёком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения,
+              нам
+              это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году
+              мы&nbsp;основали
+              компанию, чтобы показывать людям удивительные места нашей страны.</p>
+            <h3>Наша цель</h3>
+            <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берём на&nbsp;себя все
+              организационные вопросы. При организации мы&nbsp;обязательно учтём все ваши пожелания. Вам останется
+              только
+              наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+          </div>
         </div>
       </div>
     </section>
