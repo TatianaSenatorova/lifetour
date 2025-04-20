@@ -24,17 +24,7 @@
 .training-card__image-wrap img {
   display: block;
   height: 200px;
-
-  // @media (min-width: $tablet-width) {
-  //   object-fit: cover;
-  // }
-
-  @media (min-width: $desktop-width) {
-    // object-fit: contain;
-  }
 }
-
-
 
 .training-card__content {
   display: grid;
