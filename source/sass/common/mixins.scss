@@ -1,16 +1,18 @@
 @mixin section-title {
+  min-height: 55px;
   font-size: 22px;
   font-weight: 800;
   line-height: 1;
   word-break: break-word;
   position: relative;
-  padding-top: 20px;
+  padding-top: 19px;
+  padding-bottom: 14px;
 
   &::after {
     content: attr(data-title) / "";
     display: block;
     position: absolute;
-    bottom: 12px;
+    top: 0;
     left: 0;
     font-size: 26px;
     font-weight: 800;

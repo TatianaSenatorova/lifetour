@@ -4,18 +4,20 @@ import { Navigation } from 'swiper/modules';
 const reviewsSwiper = new Swiper('.swiper-reviews', {
   modules: [Navigation],
   direction: 'horizontal',
-  // slidesPerView: 1,
-  // initialSlide: 0,
+  slidesPerView: 1,
+  initialSlide: 0,
+  spaceBetween: 30,
 
   breakpoints: {
     768: {
-      // slidesPerView: 2,
+      slidesPerView: 'auto',
       // spaceBetween: 18,
     },
 
     1440: {
       // slidesPerView: 3,
-      // spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 120,
     }
   },
 
