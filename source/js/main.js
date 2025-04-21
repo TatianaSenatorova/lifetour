@@ -7,3 +7,4 @@ import './burger-menu.js';
 import './hero-slider.js';
 import './tours-slider.js';
 import './training-slider.js';
+import './reviews-slider.js';
