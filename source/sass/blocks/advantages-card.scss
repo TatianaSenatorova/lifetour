@@ -1,0 +1,86 @@
+.advantages-card {
+  min-width: 290px;
+  max-width: 290px;
+  padding: 82px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid rgba(2, 102, 193, 0.10);
+  background-size: 42px 42px;
+  background-position: top 20px center;
+  background-repeat: no-repeat;
+
+  &--safety {
+    background-image: url('/__spritemap#sprite-safety-view');
+  }
+
+  &--knowledge {
+    background-image: url('/__spritemap#sprite-crown-view');
+  }
+
+  &--equipment {
+    background-image: url('/__spritemap#sprite-boot-with-border-view');
+  }
+
+  &--route {
+    background-image: url('/__spritemap#sprite-route-view');
+  }
+
+  &--ecology {
+    background-image: url('/__spritemap#sprite-flower-view');
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    max-width: 324px;
+    min-height: 340px;
+    padding: 103px 20px 30px;
+    background-position: top 30px center;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
+.advantages-card__content {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.57;
+    }
+  }
+
+  @media (min-width: $desktop-width) {}
+}
