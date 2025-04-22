@@ -6,7 +6,7 @@
   --buttons-list-width: 78px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0;
+    padding: 40px 0 12px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,8 +24,12 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 22px;
   max-width: 550px;
+  padding-top: 18px;
+  @media (min-width: $tablet-width) {
+
+  }
+
 }
 
 .reviews__buttons-swiper-list {
@@ -34,7 +38,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: absolute;
-    top: 0;
+    top: 18px;
     left: calc(50vw + var(--section-inner-width-tablet) / 2 - var(--buttons-list-width));
   }
 
@@ -48,24 +52,16 @@
   padding: 0;
   list-style: none;
 
-  // @media (min-width: $tablet-width) {
-  //   gap: 30px;
-  // }
-
   @media (min-width: $desktop-width) {
     padding: 10px;
-    // gap: 120px;
   }
 }
 
 .reviews__slider-item {
-  padding: 15px 0 20px 0;
+  padding: 25px 0 30px 0;
 
   @media (min-width: $tablet-width) {
+    padding: 23px 0 30px 0;
     width: fit-content;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   width: fit-content;
-  // }
 }

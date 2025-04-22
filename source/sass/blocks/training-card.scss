@@ -3,18 +3,22 @@
   max-width: 290px;
   min-height: 356px;
   margin: 0 auto;
-  padding: 15px 14px;
+  padding: 14px;
   border: 1px solid rgba(2, 102, 193, 0.10);
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    min-width: unset;
-    max-width: unset;
+    min-width: 100%;
+    max-width: 100%;
     min-height: 338px;
     height: 100%;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    min-width: 285px;
+    max-width: 285px;
+    min-height: 356px;
+  }
 }
 
 .training-card__image-wrap {
