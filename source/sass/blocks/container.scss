@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  --slide-width-desktop: 380px;
+  --gap-slides-desktop: 30px;
+
   &--without-left-padding {
     padding: 0;
   }
@@ -34,19 +37,12 @@
 
     &--100vw-desktop {
       padding: unset;
-      margin: unset;
-      width: unset;
       width: 100vw;
-      // overflow: hidden;
-      // position: relative;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
+      max-width: calc(var(--slide-width-desktop) * 5 + (var(--gap-slides-desktop) * 4));
     }
   }
 
   &--wide {
     padding: 0;
   }
-
 }
