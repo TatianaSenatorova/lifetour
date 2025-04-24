@@ -31,9 +31,22 @@
     &--without-right-padding {
       padding: 0 0 0 120px;
     }
+
+    &--100vw-desktop {
+      padding: unset;
+      margin: unset;
+      width: unset;
+      width: 100vw;
+      // overflow: hidden;
+      // position: relative;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+    }
   }
 
   &--wide {
     padding: 0;
   }
+
 }

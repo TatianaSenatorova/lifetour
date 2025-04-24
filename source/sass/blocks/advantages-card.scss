@@ -39,7 +39,13 @@
     background-position: top 30px center;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 329px;
+    padding: 124px 20px 40px;
+    background-position: top 40px center;
+  }
 }
 
 .advantages-card__content {

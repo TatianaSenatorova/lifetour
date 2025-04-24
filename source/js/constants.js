@@ -1,0 +1,1 @@
+export const INIT_NUMBER_ADVANTAGES_SLIDES = 5;

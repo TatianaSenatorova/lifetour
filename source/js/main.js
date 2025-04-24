@@ -8,3 +8,4 @@ import './hero-slider.js';
 import './tours-slider.js';
 import './training-slider.js';
 import './reviews-slider.js';
+import './advantages-slider.js';

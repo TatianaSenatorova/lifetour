@@ -5,3 +5,8 @@ export const navList = mainHeader.querySelector('.main-header__nav-list');
 
 export const slides = document.querySelectorAll('.hero__slider-item');
 
+export const advantagesSlider = document.querySelector(".advantages__slider");
+export const advantagesSlidesList = advantagesSlider.querySelector(".advantages__slider-list");
+export const advantagesSlides = advantagesSlider.querySelectorAll(".advantages__slider-item");
+
+
