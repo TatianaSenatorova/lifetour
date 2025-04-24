@@ -5,36 +5,35 @@ import {
   advantagesSlides
 } from './dom-elements.js';
 import {
-  INIT_NUMBER_ADVANTAGES_SLIDES
+  INIT_NUMBER_ADVANTAGES_SLIDES,
+  DESKTOP_WIDTH
 } from './constants.js';
 
-let currentSlidesNumber = advantagesSlides.length;
+let slidesCounter = advantagesSlides.length;
 let advantagesSwiper;
 
 const addAdditionalSlides = () => {
   advantagesSlides.forEach((slide) => {
     const clonedSlide = slide.cloneNode(true);
     advantagesSlidesList.appendChild(clonedSlide);
-    currentSlidesNumber++;
+    slidesCounter++;
   });
 }
 
 const removeAdditionalSlides = () => {
   const currentSlides = advantagesSlidesList.querySelectorAll('.advantages__slider-item');
-  console.log(currentSlides);
   currentSlides.forEach((slide, index) => {
     if (index > INIT_NUMBER_ADVANTAGES_SLIDES - 1) {
       slide.remove();
-      currentSlidesNumber--;
+      slidesCounter--;
     }
   });
 }
 
 const checkDocumentWidth = () => {
-
-  if (document.documentElement.clientWidth >= 1440 && currentSlidesNumber > INIT_NUMBER_ADVANTAGES_SLIDES) {
+  if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter > INIT_NUMBER_ADVANTAGES_SLIDES) {
     return;
-  } else if (document.documentElement.clientWidth >= 1440 && currentSlidesNumber <= INIT_NUMBER_ADVANTAGES_SLIDES) {
+  } else if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
     addAdditionalSlides();
     initSlider();
     return;
@@ -49,15 +48,9 @@ const onDocumentDomContentLoaded = () => {
 
 const onWindowResize = () => {
   checkDocumentWidth();
-
 }
 
-document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
-
-window.addEventListener("resize", onWindowResize);
-
 const initSlider = () => {
-
   advantagesSwiper = new Swiper('.advantages__slider', {
     modules: [Navigation],
     direction: 'horizontal',
@@ -81,9 +74,11 @@ const initSlider = () => {
       prevEl: '.swiper-button-advantages-prev'
     },
   });
-  console.log(advantagesSwiper);
 }
 
+document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
+
+window.addEventListener("resize", onWindowResize);
 
 
 

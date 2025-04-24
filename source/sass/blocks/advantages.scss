@@ -12,7 +12,7 @@
         url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.webp") type("image/webp") 2x,
         url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
         url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x);
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: left -447px top 266px, right -233px bottom 237px, ;
     background-size: 1200px 402px, 788px 264px;
   }
@@ -58,7 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    margin-bottom: 50px;
     display: flex;
     gap: unset;
   }
@@ -90,6 +90,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: fit-content;
     margin: 0 auto;
   }
 }

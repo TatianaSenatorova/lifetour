@@ -1,1 +1,2 @@
 export const INIT_NUMBER_ADVANTAGES_SLIDES = 5;
+export const DESKTOP_WIDTH = 1440;
