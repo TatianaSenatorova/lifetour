@@ -31,6 +31,7 @@ const removeAdditionalSlides = () => {
 }
 
 const checkDocumentWidth = () => {
+
   if (document.documentElement.clientWidth >= 1440 && currentSlidesNumber > INIT_NUMBER_ADVANTAGES_SLIDES) {
     return;
   } else if (document.documentElement.clientWidth >= 1440 && currentSlidesNumber <= INIT_NUMBER_ADVANTAGES_SLIDES) {
@@ -44,11 +45,11 @@ const checkDocumentWidth = () => {
 
 const onDocumentDomContentLoaded = () => {
   checkDocumentWidth();
-  initSlider();
 }
 
 const onWindowResize = () => {
   checkDocumentWidth();
+
 }
 
 document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
@@ -56,6 +57,7 @@ document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
 window.addEventListener("resize", onWindowResize);
 
 const initSlider = () => {
+
   advantagesSwiper = new Swiper('.advantages__slider', {
     modules: [Navigation],
     direction: 'horizontal',
@@ -70,6 +72,7 @@ const initSlider = () => {
         initialSlide: 2,
         centeredSlides: true,
         spaceBetween: 30,
+        loopAddBlankSlides: false,
       }
     },
 
@@ -78,6 +81,7 @@ const initSlider = () => {
       prevEl: '.swiper-button-advantages-prev'
     },
   });
+  console.log(advantagesSwiper);
 }
 
 
