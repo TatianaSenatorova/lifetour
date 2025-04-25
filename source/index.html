@@ -905,6 +905,7 @@
                       <p>У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам
                         мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!
                       </p>
+
                       <h3 class="review-card__title">Елена Пирогова</h3>
                       <span class="review-card__addition-info">37&nbsp;лет, Тюмень</span>
                     </div>
@@ -993,28 +994,208 @@
                 </article>
               </li>
             </ul>
-            <ul class="advantages__buttons-swiper-list buttons-swiper-list">
-              <li>
-                <button class="button-swiper swiper-button-advantages-prev" type="button">
-                  <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="button-swiper button-swiper--next swiper-button-advantages-next" type="button">
-                  <span class="visually-hidden">Посмотреть следующий слайд</span>
-                  <svg aria-hidden="true" focusable="false" width="14" height="9">
-                    <use href="/__spritemap#sprite-arrow-swiper"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
           </div>
+          <ul class="advantages__buttons-swiper-list buttons-swiper-list">
+            <li>
+              <button class="button-swiper swiper-button-advantages-prev" type="button">
+                <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="button-swiper button-swiper--next swiper-button-advantages-next" type="button">
+                <span class="visually-hidden">Посмотреть следующий слайд</span>
+                <svg aria-hidden="true" focusable="false" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow-swiper"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
+    <section class="gallery" data-test="gallery" id="gallery">
+      <div class="container">
+        <div class="gallery__content">
+          <h2 class="gallery__title section-title" data-title="Фотогалерея">Фотогалерея</h2>
+          <p>Добавляйте фото с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии
+            украсят
+            этот раздел нашего сайта.</p>
+        </div>
+      </div>
+      <div class="container container--wide">
+        <div class="gallery__slider swiper-gallery">
+          <ul class="gallery__slider-list swiper-wrapper">
+            <li class="gallery__slider-item swiper-slide">
+              <article class="gallery-card">
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="463"
+                      srcset="img/gallery-photos/gallery-desktop-1@1x.webp 1x, img/gallery-photos/gallery-desktop-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="253" height="418"
+                      srcset="img/gallery-photos/gallery-tablet-1@1x.webp 1x, img/gallery-photos/gallery-tablet-1@2x.webp 2x">
+                    <source type="image/webp" width="158" height="266"
+                      srcset="img/gallery-photos/gallery-mobile-1@1x.webp 1x, img/gallery-photos/gallery-mobile-1@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-1@1x.jpg 1x, img/gallery-photos/gallery-desktop-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-1@1x.jpg 1x, img/gallery-photos/gallery-tablet-1@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-1@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-1@2x.jpg 2x" alt="Турист на фоне гор" width="158"
+                      height="266">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="gallery__slider-item swiper-slide">
+              <article class="gallery-card gallery-card--two-photos">
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="233"
+                      srcset="img/gallery-photos/gallery-desktop-2-1@1x.webp 1x, img/gallery-photos/gallery-desktop-2-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="252" height="206"
+                      srcset="img/gallery-photos/gallery-tablet-2-1@1x.webp 1x, img/gallery-photos/gallery-tablet-2-1@2x.webp 2x">
+                    <source type="image/webp" width="284" height="233"
+                      srcset="img/gallery-photos/gallery-mobile-2-1@1x.webp 1x, img/gallery-photos/gallery-mobile-2-1@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-2-1@1x.jpg 1x, img/gallery-photos/gallery-desktop-2-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="206" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-2-1@1x.jpg 1x, img/gallery-photos/gallery-tablet-2-1@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-2-1@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-2-1@2x.jpg 2x" alt="Люди вокруг костра" width="157"
+                      height="134">
+                  </picture>
+                </div>
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="463"
+                      srcset="img/gallery-photos/gallery-desktop-2-2@1x.webp 1x, img/gallery-photos/gallery-desktop-2-2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="253" height="418"
+                      srcset="img/gallery-photos/gallery-tablet-2-2@1x.webp 1x, img/gallery-photos/gallery-tablet-2-2@2x.webp 2x">
+                    <source type="image/webp" width="158" height="266"
+                      srcset="img/gallery-photos/gallery-mobile-2-2@1x.webp 1x, img/gallery-photos/gallery-mobile-2-2@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-2-2@1x.jpg 1x, img/gallery-photos/gallery-desktop-2-2@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="206" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-2-2@1x.jpg 1x, img/gallery-photos/gallery-tablet-2-2@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-2-2@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-2-2@2x.jpg 2x" alt="Компас в руке" width="157"
+                      height="124">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="gallery__slider-item swiper-slide">
+              <article class="gallery-card">
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="463"
+                      srcset="img/gallery-photos/gallery-desktop-3@1x.webp 1x, img/gallery-photos/gallery-desktop-3@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="253" height="418"
+                      srcset="img/gallery-photos/gallery-tablet-3@1x.webp 1x, img/gallery-photos/gallery-tablet-3@2x.webp 2x">
+                    <source type="image/webp" width="158" height="266"
+                      srcset="img/gallery-photos/gallery-mobile-3@1x.webp 1x, img/gallery-photos/gallery-mobile-3@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-3@1x.jpg 1x, img/gallery-photos/gallery-desktop-3@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-3@1x.jpg 1x, img/gallery-photos/gallery-tablet-3@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-3@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-3@2x.jpg 2x" alt="Подъем в гору со страховкой"
+                      width="158" height="266">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="gallery__slider-item swiper-slide">
+              <article class="gallery-card gallery-card--two-photos">
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="233"
+                      srcset="img/gallery-photos/gallery-desktop-4-1@1x.webp 1x, img/gallery-photos/gallery-desktop-4-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="252" height="206"
+                      srcset="img/gallery-photos/gallery-tablet-4-1@1x.webp 1x, img/gallery-photos/gallery-tablet-4-1@2x.webp 2x">
+                    <source type="image/webp" width="284" height="233"
+                      srcset="img/gallery-photos/gallery-mobile-4-1@1x.webp 1x, img/gallery-photos/gallery-mobile-4-1@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-4-1@1x.jpg 1x, img/gallery-photos/gallery-desktop-4-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="206" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-4-1@1x.jpg 1x, img/gallery-photos/gallery-tablet-4-1@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-4-1@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-4-1@2x.jpg 2x" alt="Туристы преодолевают ледяной покров"
+                      width="157" height="134">
+                  </picture>
+                </div>
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="463"
+                      srcset="img/gallery-photos/gallery-desktop-4-2@1x.webp 1x, img/gallery-photos/gallery-desktop-4-2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="253" height="418"
+                      srcset="img/gallery-photos/gallery-tablet-4-2@1x.webp 1x, img/gallery-photos/gallery-tablet-4-2@2x.webp 2x">
+                    <source type="image/webp" width="158" height="266"
+                      srcset="img/gallery-photos/gallery-mobile-4-2@1x.webp 1x, img/gallery-photos/gallery-mobile-4-2@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="233" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-4-2@1x.jpg 1x, img/gallery-photos/gallery-desktop-4-2@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="252" height="206" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-4-2@1x.jpg 1x, img/gallery-photos/gallery-tablet-4-2@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-4-2@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-4-2@2x.jpg 2x" alt="Палатка ночью" width="157"
+                      height="124">
+                  </picture>
+                </div>
+              </article>
+            </li>
+            <li class="gallery__slider-item swiper-slide">
+              <article class="gallery-card">
+                <div class="gallery-card__image-wrap">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" width="284" height="463"
+                      srcset="img/gallery-photos/gallery-desktop-5@1x.webp 1x, img/gallery-photos/gallery-desktop-5@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" width="253" height="418"
+                      srcset="img/gallery-photos/gallery-tablet-5@1x.webp 1x, img/gallery-photos/gallery-tablet-5@2x.webp 2x">
+                    <source type="image/webp" width="158" height="266"
+                      srcset="img/gallery-photos/gallery-mobile-5@1x.webp 1x, img/gallery-photos/gallery-mobile-5@2x.webp 2x">
+
+                    <source media="(min-width: 1440px)" width="284" height="463" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-desktop-5@1x.jpg 1x, img/gallery-photos/gallery-desktop-5@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="253" height="418" type="image/jpeg"
+                      srcset="img/gallery-photos/gallery-tablet-5@1x.jpg 1x, img/gallery-photos/gallery-tablet-5@2x.jpg 2x">
+                    <img class="gallery-card__image" src="img/gallery-photos/gallery-mobile-5@1x.jpg"
+                      srcset="img/gallery-photos/gallery-mobile-5@2x.jpg 2x" alt="Два туриста у догорающего костра"
+                      width="158" height="266">
+                  </picture>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <ul class="gallery__buttons-swiper-list buttons-swiper-list">
+          <li>
+            <button class="button-swiper swiper-button-gallery-prev" type="button">
+              <span class="visually-hidden">Посмотреть слайд предыдущий слайд</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-swiper"></use>
+              </svg>
+            </button>
+          </li>
+          <li>
+            <button class="button-swiper button-swiper--next swiper-button-gallery-next" type="button">
+              <span class="visually-hidden">Посмотреть следующий слайд</span>
+              <svg aria-hidden="true" focusable="false" width="14" height="9">
+                <use href="/__spritemap#sprite-arrow-swiper"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="container">

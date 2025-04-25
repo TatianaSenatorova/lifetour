@@ -36,6 +36,7 @@ const checkDocumentWidth = () => {
   } else if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
     addAdditionalSlides();
     initSlider();
+    console.log(advantagesSwiper);
     return;
   }
   removeAdditionalSlides();
@@ -73,8 +74,10 @@ const initSlider = () => {
       nextEl: '.swiper-button-advantages-next',
       prevEl: '.swiper-button-advantages-prev'
     },
+
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
 

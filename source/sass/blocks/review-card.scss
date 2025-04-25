@@ -58,7 +58,7 @@
   }
 
 
-  p:has(+ h3) {
+  p:last-child {
     margin-bottom: 17px;
   }
 
@@ -67,7 +67,7 @@
       margin-bottom: 12px;
     }
 
-    p:has(+ h3) {
+    p:last-child {
       margin-bottom: 26px;
     }
   }
