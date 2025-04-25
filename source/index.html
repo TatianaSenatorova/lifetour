@@ -1196,6 +1196,38 @@
         </ul>
       </div>
     </section>
+    <section class="form-section" data-test="form">
+      <h2 class="visually-hidden">Заполните форму для получения ответов на Ваши вопросы</h2>
+      <div class="form-section__container">
+        <form class="form-section__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="container container--narrow-on-desktop">
+            <div class="form__content">
+              <fieldset class="form__fieldset">
+                <legend class="form__fieldset-title section-title section-title--light section-title--bigger">Бесплатное
+                  занятие</legend>
+                <ul class="form__inputs-list">
+                  <li class="form__list-item">
+                    <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Имя"
+                      pattern="^[a-zA-Zа-яА-ЯёЁ\\ ]+$" required>
+                    <span class="form__error-text form__error-text--name">Только буквы и пробелы</span>
+                  </li>
+                  <li class="form__list-item">
+                    <label class="visually-hidden" for="phone">Введите Ваш телефон</label>
+                    <input class="input" type="text" id="phone" name="phone" placeholder="Телефон"
+                      pattern="^[^a-zA-Zа-яА-ЯёЁ]*$" required>
+                    <span class="form__error-text form__error-text--phone">Буквы не вводите</span>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="form__button button" type="submit">Отправить</button>
+            </div>
+          </div>
+        </form>
+    </div>
+    </section>
+
+
   </main>
   <footer class="main-footer">
     <div class="container">
