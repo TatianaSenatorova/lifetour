@@ -9,3 +9,4 @@ import './tours-slider.js';
 import './training-slider.js';
 import './reviews-slider.js';
 import './advantages-slider.js';
+import './gallery-slider.js';

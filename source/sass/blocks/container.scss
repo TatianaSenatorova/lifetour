@@ -47,12 +47,13 @@
     &--100vw-desktop {
       padding: 0;
       overflow: hidden;
-      width: 100vw;
-      max-width: calc(var(--advantages-slide-width-desktop) * 5 + (var(--advantages-gap-slides-desktop) * 4));
+      // width: 100vw;
+      // max-width: calc(var(--advantages-slide-width-desktop) * 5 + (var(--advantages-gap-slides-desktop) * 4));
     }
   }
 
   &--wide {
+    position: relative;
     padding: 0;
   }
 }
