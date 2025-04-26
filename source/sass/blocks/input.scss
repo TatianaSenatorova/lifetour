@@ -1,0 +1,39 @@
+.input {
+  position: relative;
+  min-height: 50px;
+}
+
+.input__field {
+  width: 100%;
+  border-radius: 2px;
+  font-family: $primary-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.57;
+  outline: none;
+  padding: 17px 15px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+
+  &::placeholder {
+    color: $color-white;
+    font-weight: 300;
+    line-height: 1.57;
+    opacity: 0.4;
+  }
+}
+
+.input__label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: $color-elephant;
+}
+
+.input__error-text {
+  display: none;
+}
