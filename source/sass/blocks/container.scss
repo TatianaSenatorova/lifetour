@@ -2,19 +2,9 @@
   width: $mobile-width;
   margin: 0 auto;
   padding: 0 15px;
-  --reviews-slide-width-desktop: 700px;
-  --reviews-gap-slides-desktop: 120px;
-  --reviews-shadow-blur: 20px;
-  --advantages-slide-width-desktop: 380px;
-  --advantages-gap-slides-desktop: 30px;
-
 
   &--without-left-padding {
     padding: 0;
-  }
-
-  &--100vw-all-breakpoints {
-    width: 100vw;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,16 +29,12 @@
     }
 
     &--without-right-padding {
-      width: calc(50vw + $desktop-width / 2);
-      max-width: calc(var(--reviews-slide-width-desktop) * 2 + var(--reviews-gap-slides-desktop) + var(--reviews-shadow-blur) + 120px);
       padding: 0 0 0 120px;
     }
 
     &--100vw-desktop {
       padding: 0;
       overflow: hidden;
-      // width: 100vw;
-      // max-width: calc(var(--advantages-slide-width-desktop) * 5 + (var(--advantages-gap-slides-desktop) * 4));
     }
   }
 
