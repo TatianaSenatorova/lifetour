@@ -1208,15 +1208,15 @@
             <fieldset class="form__fieldset">
               <ul class="form__inputs-list">
                 <li class="form__list-item">
+                  <!-- pattern="^(?=(?:.*\d){10,})[0-9\(\)\+\-]+$" -->
                   <label class="input" for="phone"><span class="input__label">Телефон</span>
-                    <input class="input__field" type="text" id="phone" name="phone" pattern="^[a-zA-Zа-яА-ЯёЁ\\ ]+$"
-                      required>
+                    <input class="input__field" type="text" id="phone" name="phone" placeholder="+7 (000)-000-00-00" required>
                     <span class="input__error-text input__error-text--phone">Буквы не вводите</span>
                   </label>
                 </li>
                 <li class="form__list-item">
                   <label class="input" for="email"><span class="input__label">Email</span>
-                    <input class="input__field" type="text" id="email" name="email" pattern="^[^a-zA-Zа-яА-ЯёЁ]*$"
+                    <input class="input__field" type="text" id="email" name="email" placeholder="email@mail.ru"
                       required>
                     <span class="input__error-text input__error-text--email">Введите email в верном формате</span>
                   </label>

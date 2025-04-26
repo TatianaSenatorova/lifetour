@@ -10,3 +10,5 @@ import './training-slider.js';
 import './reviews-slider.js';
 import './advantages-slider.js';
 import './gallery-slider.js';
+import './show-input-label.js';
+import './validate-form.js';

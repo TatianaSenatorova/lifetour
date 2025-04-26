@@ -13,13 +13,35 @@
   outline: none;
   padding: 17px 15px;
   border: 1px solid transparent;
+  background-color: $color-white;
   transition: border-color 0.3s;
 
   &::placeholder {
-    color: $color-white;
-    font-weight: 300;
-    line-height: 1.57;
-    opacity: 0.4;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+
+  &:hover {
+    border-color: $color-navy-blue;
+  }
+
+  &:focus {
+    border-color: $color-elephant;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    border-color: $color-nobel;
+  }
+
+  .input--error & {
+    border-color: $color-torch-red;
   }
 }
 
@@ -31,7 +53,24 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  color: $color-elephant;
+  color: rgba(45, 56, 63, 0.5);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5, visibility 0.5s;
+
+  .input:has(.input__field:focus) & {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .input--hide-label & {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .input:has(.input__field:disabled) & {
+    color: $color-nobel;
+  }
 }
 
 .input__error-text {
