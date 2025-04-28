@@ -1230,15 +1230,41 @@
         </div>
       </div>
     </section>
-
-
   </main>
-  <footer class="main-footer">
-    <div class="container">
+  <footer class="main-footer" data-test="footer">
+    <div class="main-footer__top-container">
+      <section class="contacts" id="contacts">
+        <div class="container container--desktop-width-unset">
+          <h2 class="contacts__title section-title" data-title="Контакты">Контакты</h2>
+          <div class="contacts__content-wrapper">
+            <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;способом или приходите
+              к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем
+              рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+          </div>
+          <div class="contacts__wrapper">
+            <div class="contacts__item contacts__item--phone">
+              <h3 class="contacts__item-title">Телефон</h3>
+              <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом form__address-link. -->
+              <a class="contacts__address-link" href="tel:+79837454545">+7&nbsp;983 745-45-45</a>
+            </div>
+            <div div class="contacts__item contacts__item--mail">
+              <h3 class="contacts__item-title">Email</h3>
+              <a class="contacts__address-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </div>
+            <address class="contacts__item contacts__item--address">
+              <p class="contacts__item-title">Адрес</p>
+              <p class="contacts__address-text">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+            </address>
+          </div>
+        </div>
+      </section>
 
 
 
     </div>
+    <div class="container">
+    </div>
+
   </footer>
 
   <!-- пример использования спрайта -->

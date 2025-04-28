@@ -1,0 +1,25 @@
+.contacts {}
+
+.contacts__content-wrapper {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  margin-bottom: 30px;
+
+  p {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  padding-top: 18px;
+}
