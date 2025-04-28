@@ -1,6 +1,18 @@
 .input {
   position: relative;
   min-height: 50px;
+
+  --padding-input-mobile: 15px;
+  --padding-input-tablet: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
 
 .input__field {
@@ -11,7 +23,7 @@
   font-weight: 400;
   line-height: 1.57;
   outline: none;
-  padding: 17px 15px;
+  padding: 13px var(--padding-input-mobile);
   border: 1px solid transparent;
   background-color: $color-white;
   transition: border-color 0.3s;
@@ -42,12 +54,22 @@
 
   .input--error & {
     border-color: $color-torch-red;
+    color: rgba(45, 56, 63, 0.5);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    padding: 16px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
 .input__label {
   position: absolute;
-  left: 15px;
+  left: var(--padding-input-mobile);
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
@@ -71,8 +93,29 @@
   .input:has(.input__field:disabled) & {
     color: $color-nobel;
   }
+
+  @media (min-width: $tablet-width) {
+    left: var(--padding-input-tablet);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
 }
 
 .input__error-text {
   display: none;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(45, 56, 63, 0.5);
+
+  &--show {
+    display: block;
+  }
 }

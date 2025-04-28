@@ -5,7 +5,7 @@ import {
 const onFormChange = (evt) => {
   if (evt.target.classList.contains('input__field')) {
     const input = evt.target.closest('.input');
-    console.log(input);
+    console.log(evt.target.value);
     evt.target.value.trim() !== '' ? input.classList.add('input--hide-label') : input.classList.remove('input--hide-label');
   }
 }
