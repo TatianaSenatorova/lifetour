@@ -1239,46 +1239,48 @@
   <footer class="main-footer" data-test="footer">
     <!-- <div class="main-footer__top-container"> -->
     <section class="contacts" id="contacts">
-      <div class="container container--desktop-width-unset">
-        <h2 class="contacts__title section-title" data-title="Контакты">Контакты</h2>
-        <div class="contacts__content-wrapper">
-          <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;способом или приходите
-            к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем
-            рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
-        </div>
-        <div class="contacts__wrapper">
-          <div class="contacts__item contacts__item--phone">
-            <h3 class="contacts__item-title">Телефон</h3>
-            <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом form__address-link. -->
-            <a class="contacts__address-link" href="tel:+79837454545">+7&nbsp;983 745-45-45</a>
-          </div>
-          <div div class="contacts__item contacts__item--email">
-            <h3 class="contacts__item-title">Email</h3>
-            <a class="contacts__address-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </div>
-          <address class="contacts__item contacts__item--address">
-            <h3 class="contacts__item-title">Адрес</h3>
-            <p class="contacts__address-text">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
-          </address>
-        </div>
-      </div>
       <div class="container container--wide">
-        <div class="map__wrap-image">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" width="600" height="324"
-              srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" width="768" height="340"
-              srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablett@2x.webp 2x">
-            <source type="image/webp" width="320" height="343"
-              srcset="img/map/map-mobile@1x.webp 1x, img/map/map-mobile@2x.webp 2x">
+        <div class="contacts__section-wrapper">
+          <div class="contacts__top-wrapper">
+            <h2 class="contacts__title section-title" data-title="Контакты">Контакты</h2>
+            <div class="contacts__content-wrapper">
+              <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;способом или&nbsp;приходите
+                к&nbsp;нам&nbsp;в&nbsp;гости. Мы&nbsp;будем
+                рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+            </div>
+            <div class="contacts__wrapper">
+              <div class="contacts__item contacts__item--phone">
+                <h3 class="contacts__item-title">Телефон</h3>
+                <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом form__address-link. -->
+                <a class="contacts__address-link" href="tel:+79837454545">+7&nbsp;983 745-45-45</a>
+              </div>
+              <div div class="contacts__item contacts__item--email">
+                <h3 class="contacts__item-title">Email</h3>
+                <a class="contacts__address-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </div>
+              <address class="contacts__item contacts__item--address">
+                <h3 class="contacts__item-title">Адрес</h3>
+                <p class="contacts__address-text">г. Москва, пр-т Мира, д.&nbsp;14, офис 101</p>
+              </address>
+            </div>
+          </div>
+          <div class="map__wrap-image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" width="600" height="324"
+                srcset="img/map/map-desktop@1x.webp 1x, img/map/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" width="768" height="340"
+                srcset="img/map/map-tablet@1x.webp 1x, img/map/map-tablett@2x.webp 2x">
+              <source type="image/webp" width="320" height="343"
+                srcset="img/map/map-mobile@1x.webp 1x, img/map/map-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1440px)" width="600" height="324" type="image/png"
-              srcset="img/map/map-desktop@1x.png 1x, img/map/map-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="768" height="340" type="image/png"
-              srcset="img/map/map-tablet@1x.png 1x, img/map/map-tablet@2x.png 2x">
-            <img class="map__image" src="img/map/map-mobile@1x.png" srcset="img/map/map-mobile@2x.png 2x"
-              alt="Карта с указанием местонахождения фирмы" width="320" height="343" loading="lazy">
-          </picture>
+              <source media="(min-width: 1440px)" width="600" height="324" type="image/png"
+                srcset="img/map/map-desktop@1x.png 1x, img/map/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" width="768" height="340" type="image/png"
+                srcset="img/map/map-tablet@1x.png 1x, img/map/map-tablet@2x.png 2x">
+              <img class="map__image" src="img/map/map-mobile@1x.png" srcset="img/map/map-mobile@2x.png 2x"
+                alt="Карта с указанием местонахождения фирмы" width="320" height="343" loading="lazy">
+            </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -1315,45 +1317,45 @@
           </ul>
           <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом phone. -->
           <a class="footer-nav__phone phone phone--dark" href="tel:+78000000000">8&nbsp;800 000-00-00</a>
-          <div class="footer-nav__social social">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="social__list">
- <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом social-link . -->
-              <li class="social__item">
-                <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
-                  rel="noreferrer noopener">
-                  <span class="visually-hidden">ВКонтакте</span>
-                  <span class="social-link__svg-wrapper">
-                    <svg aria-hidden="true" focusable="false" width="24" height="24">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
-                  rel="noreferrer noopener">
-                  <span class="visually-hidden">ВКонтакте</span>
-                  <span class="social-link__svg-wrapper">
-                    <svg aria-hidden="true" focusable="false" width="9" height="16">
-                      <use href="/__spritemap#sprite-odnoklassniki"></use>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
-                  rel="noreferrer noopener">
-                  <span class="visually-hidden">ВКонтакте</span>
-                  <span class="social-link__svg-wrapper">
-                    <svg aria-hidden="true" focusable="false" width="14" height="17">
-                      <use href="/__spritemap#sprite-reddit"></use>
-                    </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="footer-nav__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="social__list">
+            <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом social-link . -->
+            <li class="social__item">
+              <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
+                rel="noreferrer noopener">
+                <span class="visually-hidden">ВКонтакте</span>
+                <span class="social-link__svg-wrapper">
+                  <svg aria-hidden="true" focusable="false" width="24" height="24">
+                    <use href="/__spritemap#sprite-vk"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
+                rel="noreferrer noopener">
+                <span class="visually-hidden">ВКонтакте</span>
+                <span class="social-link__svg-wrapper">
+                  <svg aria-hidden="true" focusable="false" width="9" height="16">
+                    <use href="/__spritemap#sprite-odnoklassniki"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__social-link social-link social-link--bigger" href="#" target="_blank"
+                rel="noreferrer noopener">
+                <span class="visually-hidden">ВКонтакте</span>
+                <span class="social-link__svg-wrapper">
+                  <svg aria-hidden="true" focusable="false" width="14" height="17">
+                    <use href="/__spritemap#sprite-reddit"></use>
+                  </svg>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
         <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом footer-nav__policy". -->
         <a class="footer-nav__policy" href="#">Политика конфиденциальности</a>

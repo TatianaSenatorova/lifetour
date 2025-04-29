@@ -47,12 +47,14 @@
     font-weight: 700;
     letter-spacing: 0.56px;
     text-transform: uppercase;
-
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    letter-spacing: 0.64px;
+
+    &--uppercase {
+      font-size: 16px;
+      letter-spacing: 0.64px;
+    }
   }
 
   @media (min-width: $desktop-width) {
