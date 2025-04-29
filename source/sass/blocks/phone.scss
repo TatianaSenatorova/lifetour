@@ -1,0 +1,54 @@
+.phone {
+  padding: 10px 0;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  color: $color-white;
+  transition: color 0.3s;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.50);
+  }
+
+  &:focus {
+    color: $color-elephant;
+  }
+
+  &:active {
+    color: $color-resolution-blue;
+  }
+
+  &--dark {
+    display: none;
+    color: $color-elephant;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.10);
+    }
+
+    &:focus {
+      color: $color-navy-blue;
+    }
+
+    &:active {
+      color: $color-resolution-blue;
+    }
+  }
+
+  &--is-disabled {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+
+    &--dark {
+      display: block;
+    }
+  }
+}

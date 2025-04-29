@@ -1,0 +1,50 @@
+.social-link {
+  height: fit-content;
+  display: block;
+  padding: 5px;
+
+  &--without-padding-right {
+    padding: 8px 0 8px 8px;
+  }
+}
+
+.social-link__svg-wrapper {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  color: $color-elephant;
+  transition: border-color 0.3s;
+
+  .social-link:hover & {
+    border-color: $color-elephant;
+  }
+
+  .social-link:focus & {
+    border-color: transparent;
+  }
+
+  .social-link:active & {
+    border-color: transparent;
+    background-color: $color-navy-blue;
+    color: $color-white;
+  }
+
+  .social-link--is-disabled & {
+    color: rgba(45, 56, 63, 0.3);
+  }
+
+  .social-link--bigger & {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.social-link__svg-wrapper svg {
+  display: block;
+  // width: 100%;
+  // height: 100%;
+}

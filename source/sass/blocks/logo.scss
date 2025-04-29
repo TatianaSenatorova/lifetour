@@ -1,6 +1,16 @@
-// .logo {
-//   flex-shrink: 0;
-// }
+.logo {
+  // flex-shrink: 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+
+  &--dark:hover {
+    opacity: 0.6;
+  }
+
+  &--dark:active {
+    opacity: 0.4;
+  }
+}
 
 .logo img {
   display: block;

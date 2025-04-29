@@ -144,7 +144,6 @@
 }
 
 .main-header__link {
-  display: block;
   margin-left: calc(var(--link-padding) * -1);
   padding: 2px 4px;
   text-decoration: none;
@@ -201,36 +200,8 @@
 .main-header__phone {
   grid-column: 2 / -1;
   justify-self: flex-end;
-  padding: 10px 0;
-  font-weight: 600;
-  line-height: 1;
-  text-decoration: none;
-  color: $color-white;
-  transition: color 0.3s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.50);
-  }
-
-  &:focus {
-    color: $color-elephant;
-  }
-
-  &:active {
-    color: $color-resolution-blue;
-  }
-
-  &--is-disabled {
-    color: $color-nobel;
-    pointer-events: none;
-  }
 
   @media (min-width: $tablet-width) {
     grid-column: -1 / -2;
-    font-size: 16px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
   }
 }

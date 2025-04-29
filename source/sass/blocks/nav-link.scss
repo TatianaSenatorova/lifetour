@@ -1,0 +1,64 @@
+.nav-link {
+  display: block;
+  padding: 2px 4px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
+  color: $color-white;
+
+  &:hover {
+    border-bottom-color: $color-white;
+  }
+
+  &:focus {
+    border-color: $color-white;
+  }
+
+  &:active {
+    border-color: transparent;
+    color: $color-resolution-blue;
+  }
+
+  &--dark {
+    color: $color-elephant;
+
+    &:hover {
+      border-bottom-color: $color-elephant;
+    }
+
+    &:focus {
+      border-color: $color-elephant;
+    }
+
+    &:active {
+      border-color: transparent;
+      color: $color-navy-blue;
+    }
+  }
+
+  &--is-disabled {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+
+  &--uppercase {
+    font-weight: 700;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-transform: unset;
+    margin-left: unset;
+    font-weight: 400;
+    letter-spacing: unset;
+  }
+}
