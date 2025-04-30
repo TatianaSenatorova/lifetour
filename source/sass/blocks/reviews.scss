@@ -1,5 +1,5 @@
 .reviews {
-  padding: 20px 0;
+  padding: 20px 0 0;
 
   --section-inner-width-tablet: 678px;
   --section-inner-width-desktop: 1200px;
@@ -61,7 +61,7 @@
 }
 
 .reviews__slider-item {
-  padding: 16px 0 30px 0;
+  padding: 16px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 23px 0 30px 0;

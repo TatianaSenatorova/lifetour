@@ -28,7 +28,7 @@
 }
 
 .footer-nav__logo {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -37,7 +37,7 @@
 
 .footer-nav__list {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
   width: 100%;
@@ -45,7 +45,7 @@
   grid-template-columns: repeat(2, 120px);
   grid-auto-flow: column;
   justify-content: space-between;
-  row-gap: 11px;
+  row-gap: 9px;
 
   @media (min-width: $tablet-width) {
     display: flex;

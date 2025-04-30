@@ -1,7 +1,7 @@
 .advantages-card {
   min-width: 290px;
   max-width: 290px;
-  padding: 82px 10px 20px;
+  padding: 83px 9px 17px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -9,7 +9,7 @@
   border: 1px solid rgba(2, 102, 193, 0.10);
   background-color: $color-white;
   background-size: 42px 42px;
-  background-position: top 20px center;
+  background-position: top 21px center;
   background-repeat: no-repeat;
 
   &--safety {
@@ -55,8 +55,9 @@
   line-height: 1.5;
 
   h3 {
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
+    // margin-bottom: 15px;
+    max-width: 230px;
     text-align: center;
     font-size: 14px;
     font-weight: 600;

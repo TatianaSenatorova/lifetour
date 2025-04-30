@@ -1,6 +1,6 @@
 .gallery {
   padding-top: 20px;
-  padding-bottom: 3px;
+  margin-bottom: 3px;
 
   --gap-between-top-and-slider: 21px;
   --slider-buttons-height: 35px;
@@ -16,7 +16,7 @@
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
