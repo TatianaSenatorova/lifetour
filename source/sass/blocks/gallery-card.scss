@@ -1,14 +1,12 @@
 .gallery-card {
   min-width: 158px;
   max-width: 158px;
-  // height: 100%;
 
   &--two-photos {
     min-width: 157px;
     max-width: 157px;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     gap: 6px;
   }
 
@@ -19,13 +17,15 @@
     &--two-photos {
       min-width: 252px;
       max-width: 252px;
-      // gap: 6px;
     }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 284px;
     max-width: 284px;
-  // gap: 7px;
   }
+}
+
+.gallery-card__image {
+  display: block;
 }
