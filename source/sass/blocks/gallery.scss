@@ -24,8 +24,9 @@
     margin-bottom: 20px;
   }
 
-  @media (min-width: $desktop-width) {}
-
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .gallery__content {
@@ -61,7 +62,7 @@
     margin-bottom: 46px;
 
     p {
-      max-width: 592px;
+      max-width: 600px;
       font-size: 16px;
       line-height: 1.5;
     }
