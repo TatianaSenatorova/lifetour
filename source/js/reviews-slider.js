@@ -7,16 +7,14 @@ const reviewsSwiper = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
   initialSlide: 0,
   spaceBetween: 30,
-  // autoHeight: true,
+  autoHeight: true,
 
   breakpoints: {
     768: {
       slidesPerView: 'auto',
-      // spaceBetween: 18,
     },
 
     1440: {
-      // slidesPerView: 3,
       slidesPerView: 'auto',
       spaceBetween: 120,
     }

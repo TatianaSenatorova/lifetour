@@ -23,7 +23,8 @@
 }
 
 .reviews__slider {
-  
+  padding-bottom: 16px;
+
   @media (min-width: $tablet-width) {
     overflow: hidden;
     padding-right: 45px;
