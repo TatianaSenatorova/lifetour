@@ -8,6 +8,7 @@
     max-width: 157px;
     display: flex;
     flex-direction: column;
+    // justify-content: center;
     gap: 6px;
   }
 
@@ -18,6 +19,7 @@
     &--two-photos {
       min-width: 252px;
       max-width: 252px;
+      // gap: 6px;
     }
   }
 
