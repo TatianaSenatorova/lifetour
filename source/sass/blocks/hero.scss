@@ -1,7 +1,7 @@
 .hero {
   --padding-desktop: 120px;
   --destop-card-height: 800px;
-  --addition-space--bullet: 5px;
+  --addition-space-bullet: 5px;
 }
 
 .hero__slider {
@@ -37,7 +37,7 @@
     bottom: 86px;
     left: unset;
     transform: unset;
-    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop) - var(--addition-space--bullet));
+    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop) - var(--addition-space-bullet));
   }
 }
 

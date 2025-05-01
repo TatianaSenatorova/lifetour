@@ -5,15 +5,15 @@
     padding: 40px 0;
     background-image:
       image-set(url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x),
+      url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/backgrounds/big-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x),
       image-set(url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
-        url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x);
+      url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
-    background-position: left -447px top 266px, right -233px bottom 237px, ;
+    background-position: left -447px top 266px, right -233px bottom 237px;
     background-size: 1200px 402px, 788px 264px;
   }
 
@@ -31,8 +31,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
   }
-
-  @media (min-width: $desktop-width) {}
 }
 
 .advantages__slider {
@@ -73,7 +71,6 @@
 }
 
 .advantages__slider-item:last-child:nth-child(2n+1) {
-
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     justify-self: center;

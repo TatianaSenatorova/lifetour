@@ -8,6 +8,6 @@ const onFormChange = (evt) => {
     console.log(evt.target.value);
     evt.target.value.trim() !== '' ? input.classList.add('input--hide-label') : input.classList.remove('input--hide-label');
   }
-}
+};
 
 form.addEventListener('change', onFormChange);

@@ -1,6 +1,6 @@
 .learning-card {
   max-width: 250px;
- padding-left: 49px;
+  padding-left: 49px;
 
   background-repeat: no-repeat;
   background-size: 25px 25px;
@@ -8,21 +8,21 @@
   color: $color-elephant;
 
   &--route {
-    background-image: url('/__spritemap#sprite-map-view');
+    background-image: url("/__spritemap#sprite-map-view");
   }
 
   &--equipment {
     background-position: top 3px left 15px;
     background-size: 25px 21px;
-    background-image: url('/__spritemap#sprite-boots-view');
+    background-image: url("/__spritemap#sprite-boots-view");
   }
 
   &--ecology {
-    background-image: url('/__spritemap#sprite-pine-tree-view');
+    background-image: url("/__spritemap#sprite-pine-tree-view");
   }
 
   &--obstacles {
-    background-image: url('/__spritemap#sprite-mountain-view');
+    background-image: url("/__spritemap#sprite-mountain-view");
   }
 
   @media (min-width: $tablet-width) {
@@ -53,6 +53,5 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 1.5;
-
   }
 }

@@ -1,6 +1,5 @@
 .hero-card {
   background-color: $color-air-force-blue;
-  min-height: 568px;
   min-height: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -163,7 +162,7 @@
   min-height: 44px;
   display: flex;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.50);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.33;
@@ -173,10 +172,10 @@
   background-size: 12px 12px;
 
   &--duration {
-    background-image: url('/__spritemap#sprite-moon-view');
+    background-image: url("/__spritemap#sprite-moon-view");
   }
 
   &--level {
-    background-image: url('/__spritemap#sprite-level-view');
+    background-image: url("/__spritemap#sprite-level-view");
   }
 }

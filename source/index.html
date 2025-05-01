@@ -77,7 +77,7 @@
           </div>
         </nav>
 
-        <a class="main-header__logo logo">
+        <a class="main-header__logo logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="205" height="62" type="image/svg+xml"
               srcset="img/logo/logo-light-desktop.svg">
@@ -464,7 +464,7 @@
                 </button>
               </li>
             </ul>
-            <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary-->
+            <!-- Чтобы кнопка отобразилась в неактивном состоянии, необходимо добавить класс-модификатор is-disabled к элементу с классом button-secondary -->
             <a class="tours__button-secondary button-secondary" href="#">Показать все туры
               <svg class="button-secondary__arrow" aria-hidden="true" focusable="false" width="9" height="14">
                 <use href="/__spritemap#sprite-arrow-right"></use>
@@ -735,7 +735,7 @@
                 srcset="img/about-photos/about-desktop@1x.jpg 1x, img/about-photos/about-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="450" height="350" type="image/jpeg"
                 srcset="img/about-photos/about-tablet@1x.jpg 1x, img/about-photos/about-tablet@2x.jpg 2x">
-              <img class="about-card__image" src="img/about-photos/about-mobile@1x.jpg"
+              <img src="img/about-photos/about-mobile@1x.jpg"
                 srcset="img/about-photos/about-mobile@2x.jpg 2x" alt="Группа во время похода" width="320" height="400">
             </picture>
           </div>
@@ -1204,17 +1204,18 @@
             </div>
             <div class="form__bottom-wrapper">
               <fieldset class="form__fieldset">
+                <legend class="visually-hidden">Заполните телефон и электронную почту</legend>
                 <ul class="form__inputs-list">
                   <li class="form__list-item">
-                    <label class="input" for="phone"><span class="input__label">Телефон</span>
-                      <input class="input__field" type="text" id="phone" name="phone" placeholder="+7 (000)-000-00-00"
+                    <label class="input"><span class="input__label">Телефон</span>
+                      <input class="input__field" type="text" name="phone" placeholder="+7 (000)-000-00-00"
                         pattern="^(?=(?:.*\d){10,})[0-9\(\)\+\-\s]+$" required>
                       <span class="input__error-text input__error-text--phone">Буквы не вводите</span>
                     </label>
                   </li>
                   <li class="form__list-item">
-                    <label class="input" for="email"><span class="input__label">Email</span>
-                      <input class="input__field" type="text" id="email" name="email" placeholder="email@mail.ru"
+                    <label class="input" ><span class="input__label">Email</span>
+                      <input class="input__field" type="text" name="email" placeholder="email@mail.ru"
                         pattern="^\S+@\S+\.\S+$" required>
                       <span class="input__error-text input__error-text--email">Введите email в верном формате</span>
                     </label>

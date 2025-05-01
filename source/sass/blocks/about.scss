@@ -11,7 +11,6 @@
 }
 
 .about__wrapper {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 450px 270px;
@@ -24,7 +23,6 @@
 }
 
 .about__image-wrap {
-
   @media (min-width: $tablet-width) {
     padding-top: 133px;
   }
@@ -40,10 +38,12 @@
 
 .about__content {
   padding: 0 15px;
+
   // min-height: 507px;
 
   h2 {
     @include section-title;
+
     padding-top: 17px;
     margin: 0;
     margin-bottom: 26px;

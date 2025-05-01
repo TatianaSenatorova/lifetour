@@ -24,5 +24,3 @@ const heroSwiper = new Swiper('.swiper-tours', {
     prevEl: '.swiper-button-tour-prev'
   },
 });
-
-

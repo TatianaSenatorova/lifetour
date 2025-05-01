@@ -23,10 +23,9 @@ const heroSwiper = new Swiper('.swiper-hero', {
     type: 'bullets',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<button class="' + className + '"><span class="visually-hidden">Перейти к слайду ' + (index + 1) +
-        '</span></button>';
+      return `<button class="${ className }"><span class="visually-hidden">Перейти к слайду ${ index + 1
+      }</span></button>`;
     },
     enabled: true,
   },
 });
-

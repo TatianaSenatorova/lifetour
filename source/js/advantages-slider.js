@@ -18,7 +18,7 @@ const addAdditionalSlides = () => {
     advantagesSlidesList.appendChild(clonedSlide);
     slidesCounter++;
   });
-}
+};
 
 const removeAdditionalSlides = () => {
   const currentSlides = advantagesSlidesList.querySelectorAll('.advantages__slider-item');
@@ -28,29 +28,29 @@ const removeAdditionalSlides = () => {
       slidesCounter--;
     }
   });
-}
+};
 
 const checkDocumentWidth = () => {
   if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter > INIT_NUMBER_ADVANTAGES_SLIDES) {
-    return;
+
   } else if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
     addAdditionalSlides();
     initSlider();
-    return;
+
   } else if (advantagesSwiper) {
     removeAdditionalSlides();
     advantagesSwiper.destroy();
   }
-}
+};
 
 
 const onDocumentDomContentLoaded = () => {
   checkDocumentWidth();
-}
+};
 
 const onWindowResize = () => {
   checkDocumentWidth();
-}
+};
 
 const initSlider = () => {
   advantagesSwiper = new Swiper('.advantages__slider', {
@@ -77,11 +77,8 @@ const initSlider = () => {
     },
 
   });
-}
+};
 
-document.addEventListener("DOMContentLoaded", onDocumentDomContentLoaded);
+document.addEventListener('DOMContentLoaded', onDocumentDomContentLoaded);
 
-window.addEventListener("resize", onWindowResize);
-
-
-
+window.addEventListener('resize', onWindowResize);

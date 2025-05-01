@@ -106,4 +106,3 @@ inputs.forEach((input) => {
 // // };
 
 // form.addEventListener('submit', onFormSubmit);
-

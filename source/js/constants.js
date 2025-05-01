@@ -5,5 +5,3 @@ export const DESKTOP_WIDTH = 1440;
 //   EMAIL_ERROR: 'Введите email в формате email@mail.ru'
 // };
 export const errorClassInput = 'input--error';
-
-

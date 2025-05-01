@@ -6,12 +6,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
   // justify-content: center;
-  border: 1px solid rgba(2, 102, 193, 0.10);
+  border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $color-white;
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -25,11 +26,11 @@
   }
 
   &--safety::after {
-    background-image: url('/__spritemap#sprite-safety-view');
+    background-image: url("/__spritemap#sprite-safety-view");
   }
 
   &--knowledge::after {
-    background-image: url('/__spritemap#sprite-crown-view');
+    background-image: url("/__spritemap#sprite-crown-view");
   }
 
   &--equipment::after {
@@ -37,11 +38,11 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 24px 24px;
-    mask-image: url('/__spritemap#sprite-boots-view');
+    mask-image: url("/__spritemap#sprite-boots-view");
   }
 
   &--equipment::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -52,11 +53,11 @@
   }
 
   &--route::after {
-    background-image: url('/__spritemap#sprite-route-view');
+    background-image: url("/__spritemap#sprite-route-view");
   }
 
   &--ecology::after {
-    background-image: url('/__spritemap#sprite-flower-view');
+    background-image: url("/__spritemap#sprite-flower-view");
   }
 
   @media (min-width: $tablet-width) {
@@ -66,7 +67,7 @@
     padding: 103px 19px 30px;
     background-position: top 30px center;
 
-    &:after {
+    &::after {
       top: 29px;
       width: 48px;
       height: 48px;
@@ -94,7 +95,7 @@
     padding: 124px 20px 40px;
     background-position: top 40px center;
 
-    &:after {
+    &::after {
       top: 39px;
       width: 54px;
       height: 54px;
@@ -105,7 +106,6 @@
       width: 54px;
       height: 54px;
     }
-
   }
 }
 
@@ -116,6 +116,7 @@
 
   h3 {
     margin: 0 auto 15px;
+
     // margin-bottom: 15px;
     max-width: 230px;
     text-align: center;
@@ -153,8 +154,8 @@
 
   @media (min-width: $desktop-width) {
     h3 {
-     max-width: 300px;
-     font-size: 18px;
+      max-width: 300px;
+      font-size: 18px;
     }
   }
 }

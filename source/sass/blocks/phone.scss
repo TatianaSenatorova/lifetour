@@ -7,7 +7,7 @@
   transition: color 0.3s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   &:focus {
@@ -23,7 +23,7 @@
     color: $color-elephant;
 
     &:hover {
-      color: rgba(2, 102, 193, 0.10);
+      color: rgba(2, 102, 193, 0.1);
     }
 
     &:focus {

@@ -6,7 +6,7 @@
   --buttons-list-width: 78px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 12px 0;
+    padding: 40px 0 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,12 +62,11 @@
   padding: 16px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 26px 0;
+    padding: 27px 0 26px;
     width: fit-content;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px 0 26px 0;
-
+    padding: 25px 0 26px;
   }
 }
