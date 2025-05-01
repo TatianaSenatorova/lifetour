@@ -7,6 +7,7 @@ const reviewsSwiper = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
   initialSlide: 0,
   spaceBetween: 30,
+  // autoHeight: true,
 
   breakpoints: {
     768: {

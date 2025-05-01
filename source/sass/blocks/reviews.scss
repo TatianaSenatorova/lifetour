@@ -23,8 +23,15 @@
 }
 
 .reviews__slider {
-  // padding-top: 4px;
-  // overflow: hidden;
+  
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 120px;
+  }
 }
 
 .reviews__title {
