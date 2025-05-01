@@ -8,13 +8,14 @@
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: top 1px left 15px;
+  color: $color-elephant;
 
   &--route {
     background-image: url('/__spritemap#sprite-map-view');
   }
 
   &--equipment {
-      background-position: top 3px left 15px;
+    background-position: top 3px left 15px;
     background-size: 25px 21px;
     background-image: url('/__spritemap#sprite-boots-view');
   }

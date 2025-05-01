@@ -23,13 +23,14 @@
 }
 
 .reviews__slider {
+  // padding-top: 4px;
   // overflow: hidden;
 }
 
 .reviews__title {
   margin: 0;
   max-width: 550px;
-  padding-top: 17px;
+  padding-top: 20px;
   @media (min-width: $tablet-width) {
 
   }
@@ -41,7 +42,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: calc(50vw + var(--section-inner-width-tablet) / 2 - var(--buttons-list-width));
   }
 
@@ -64,7 +65,7 @@
   padding: 16px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 0 30px 0;
+    padding: 27px 0 26px 0;
     width: fit-content;
   }
 }

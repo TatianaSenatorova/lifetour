@@ -2,7 +2,7 @@
   padding: 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 0 44px;
+    padding: 41px 0 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,11 @@
 }
 
 .about__image-wrap  {
-  // padding-top: 133px;
+
+  @media (min-width: $tablet-width) {
+  padding-top: 133px;
+  }
+
 }
 
 .about__image-wrap img {
