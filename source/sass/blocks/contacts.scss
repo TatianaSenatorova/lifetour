@@ -87,7 +87,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    gap: 35px;
+    gap: 25px;
   }
 }
 
@@ -101,7 +101,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 }
 
@@ -134,6 +134,12 @@
     margin-bottom: 0;
     padding-left: 34px;
   }
+  @media (min-width: $desktop-width) {
+      padding-left: 56px;
+      background-position: center left;
+      background-size: 26px 26px;
+  }
+
 }
 
 .contacts__item-title {
@@ -191,6 +197,7 @@
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 1.5;
+    padding: 8px 0 10px;
   }
 }
 
