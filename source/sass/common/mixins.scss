@@ -7,6 +7,10 @@
   position: relative;
   padding-top: 19px;
 
+  &--padding-bigger-on-mobile {
+    padding-top: 20px;
+  }
+
   &::after {
     content: attr(data-title) / "";
     display: block;
@@ -33,6 +37,17 @@
   @media (min-width: $desktop-width) {
     font-size: 35px;
     padding-top: 22px;
+
+    &--bigger-on-desktop {
+      min-height: 80px;
+      padding-top: 40px;
+    }
+
+    &--medium-on-desktop {
+      min-height: 70px;
+      padding-top: 35px;
+    }
+
 
     &::after {
       font-size: 55px;

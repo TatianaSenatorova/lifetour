@@ -23,12 +23,15 @@
   }
 }
 
-.about__image-wrap  {
+.about__image-wrap {
 
   @media (min-width: $tablet-width) {
-  padding-top: 133px;
+    padding-top: 133px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: unset;
+  }
 }
 
 .about__image-wrap img {
@@ -90,6 +93,8 @@
   @media (min-width: $desktop-width) {
     h2 {
       margin-bottom: 57px;
+      min-height: 80px;
+      padding-top: 40px;
     }
 
     h3 {

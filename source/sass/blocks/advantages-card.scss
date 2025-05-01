@@ -93,6 +93,19 @@
     min-height: 329px;
     padding: 124px 20px 40px;
     background-position: top 40px center;
+
+    &:after {
+      top: 39px;
+      width: 54px;
+      height: 54px;
+    }
+
+    &--equipment::before {
+      top: 39px;
+      width: 54px;
+      height: 54px;
+    }
+
   }
 }
 
@@ -138,5 +151,10 @@
     }
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    h3 {
+     max-width: 300px;
+     font-size: 18px;
+    }
+  }
 }

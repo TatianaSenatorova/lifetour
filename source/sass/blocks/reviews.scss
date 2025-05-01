@@ -30,10 +30,6 @@
 .reviews__title {
   margin: 0;
   max-width: 550px;
-  padding-top: 20px;
-  @media (min-width: $tablet-width) {
-
-  }
 }
 
 .reviews__buttons-swiper-list {
@@ -48,6 +44,7 @@
 
   @media (min-width: $desktop-width) {
     left: calc(50vw + var(--section-inner-width-desktop) / 2 - var(--buttons-list-width));
+    top: 45px;
   }
 }
 
@@ -67,5 +64,10 @@
   @media (min-width: $tablet-width) {
     padding: 27px 0 26px 0;
     width: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 26px 0;
+
   }
 }
