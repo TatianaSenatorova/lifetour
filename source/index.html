@@ -29,6 +29,13 @@
   <header class="main-header" data-test="header">
     <div class="container">
       <div class="main-header__content">
+        <a class="main-header__logo logo" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="205" height="62" type="image/svg+xml"
+              srcset="img/logo/logo-light-desktop.svg">
+            <img src="img/logo/logo-light-mobile.svg" alt="Логотип компании Lifetour" width="142" height="42">
+          </picture>
+        </a>
         <nav class="main-header__main-nav">
           <button class="main-header__burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -76,14 +83,6 @@
             </ul>
           </div>
         </nav>
-
-        <a class="main-header__logo logo" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" width="205" height="62" type="image/svg+xml"
-              srcset="img/logo/logo-light-desktop.svg">
-            <img src="img/logo/logo-light-mobile.svg" alt="Логотип компании Lifetour" width="142" height="42">
-          </picture>
-        </a>
         <!-- Чтобы отобразить ссылку в состоянии disable надо добавить класс-модификатор is-disabled к элементу с классом phone. -->
         <a class="main-header__phone phone" href="tel:+78000000000">8&nbsp;800 000-00-00</a>
       </div>

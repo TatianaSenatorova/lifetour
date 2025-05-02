@@ -10,7 +10,7 @@
       url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@1x.jpg") type("image/jpeg") 1x,
       url("../../img/backgrounds/small-cloud-advantages-tablet-desktop@2x.jpg") type("image/jpeg") 2x);
     background-repeat: no-repeat;
-    background-position: left -312px top 317px, right -339px top 501px,;
+    background-position: right calc(50vw - 168px) top 317px, left calc(50vw + 271px) top 501px,;
     background-size: 1200px 402px, 788px 264px;
   }
 }
