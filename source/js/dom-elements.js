@@ -10,5 +10,7 @@ export const advantagesSlidesList = advantagesSlider.querySelector('.advantages_
 export const advantagesSlides = advantagesSlider.querySelectorAll('.advantages__slider-item');
 
 export const form = document.querySelector('.form');
+export const inputsList = Array.from(form.querySelectorAll('.form__type-input'));
 export const inputPhone = form.querySelector('.input__field[name=\'phone\']');
 export const inputEmail = form.querySelector('.input__field[name=\'email\']');
+export const submitButton = form.querySelector('.form__button');

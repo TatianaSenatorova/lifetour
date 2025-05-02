@@ -1,108 +1,62 @@
 import {
+  form,
   inputPhone,
-  inputEmail
+  inputEmail,
+  submitButton
 } from './dom-elements.js';
 
 import {
-  errorClassInput
+  DataForValidation
 } from './constants.js';
 
-const inputs = [inputPhone, inputEmail];
+let invalidInputsData = [inputPhone, inputEmail];
+const inputs = []
 
-const onInputInvalid = (target) => {
-  const input = target.closest('.input');
-  input.classList.add(errorClassInput);
-  target.addEventListener('input', () => {
-    input.classList.remove(errorClassInput);
-  });
+startValidation();
+
+const blockSubmitButton = (isBlocked = true) => {
+  submitButton.disabled = isBlocked;
 };
 
-inputs.forEach((input) => {
-  input.addEventListener('invalid', ({ target }) => {
-    onInputInvalid(target);
+const showError = () => {
+  const inputParent = invalidInputsData[0].DOM_INPUT.closest('.input');
+  inputParent.classList.add('input--error');
+  invalidInputsData[0].DOM_INPUT.setCustomValidity(invalidInputsData[0].ERROR);
+  invalidInputsData[0].DOM_INPUT.reportValidity(invalidInputsData[0].ERROR);
+}
+
+function startValidation() {
+  form.addEventListener('submit', (event) => {
+    blockSubmitButton();
+    if (!isValid()) {
+      event.preventDefault();
+      showError();
+    }
+    blockSubmitButton(false);
+  })
+};
+
+function isValid() {
+  invalidInputsData = [];
+  DataForValidation.forEach(element => {
+    if (!(element.REG_EXP.test(element.DOM_INPUT.value.trim()))) {
+      element.VALID = !element.VALID;
+      invalidInputsData.push(element);
+    }
   });
-});
+  return invalidInputsData.length === 0;
+}
 
+const removeError = (target) => {
+  if (target.closest('.input').classList.contains('input--error')) {
+    target.closest('.input').classList.remove('input--error');
+    target.setCustomValidity(' ');
+    target.reportValidity();
+  }
+}
 
-// import {
-//   form,
-//   inputPhone,
-//   inputEmail,
-//   submitButton
-// } from './dom-elements.js';
-
-// import { Errors } from './constants.js';
-
-// import {sendData} from './api.js';
-
-// console.log(inputPhone, inputEmail);
-
-// const inputs = [userName, userPhone];
-// const errors = [nameError, phoneError];
-
-// const onInputInvalid = (target, index) => {
-//   errors[index].style.display = 'block';
-//   target.classList.add(errorClassInput);
-//   target.addEventListener('input', () => {
-//     target.classList.remove(errorClassInput);
-//     errors[index].style.display = 'none';
-//   });
-// };
-
-// inputs.forEach((input, index) => {
-//   input.addEventListener('invalid', ({ target }) => {
-//     onInputInvalid(target, index);
-//   });
-// });
-
-// const emailRegExp = /^\w+([.-]?\w+)@\w+([.-]?\w+)(\.\w{2,})$/;
-
-// const phoneRegExp = /^(?=(?:.*\d){10,})[0-9\(\)\+\-]+$/;
-// // const emailRegExp = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w)$/;
-// const emailRegExp = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*\.[a-zA-Zа-яА-Я]{2,}$/;
-
-// console.log(phoneRegExp, emailRegExp);
-
-// const validatePhone = (value) => phoneRegExp.test(value);
-
-// const validateEmail = (value) => emailRegExp.test(value);
-
-// const isValid = (phoneValue, inputValue) => validatePhone(phoneValue) && validateEmail(inputValue);
-
-// const blockSubmitButton = (isBlocked = true) => {
-//   submitButton.disabled = isBlocked;
-// };
-
-// const changeTextButton = () => submitButton.textContent = 'Данные отправлены';
-
-// const onFormSubmit = (evt) => {
-//   evt.preventDefault();
-//   console.log(inputPhone.value);
-//   console.log(inputEmail.value);
-//   console.log(validatePhone(inputPhone.value));
-//   console.log(validateEmail(inputEmail.value));
-//   if (isValid(inputPhone.value, inputEmail.value)) {
-//     fetch('https://echo.htmlacademy.ru', {
-//       method: "POST",
-//       body: new FormData(evt.target),
-//     })
-
-//     // console.log(isValid(inputPhone.value, inputEmail.value));
-//     // blockSubmitButton();
-//     // sendData(new FormData(evt.target))
-//     //   .then(() => {
-//     //     console.log('123');
-//     //     // clearForm();
-//     //   })
-//     //   .catch(() => changeTextButton())
-//     //   .finally(() => blockSubmitButton(false));
-
-//     console.log('ok');
-//   }
-// };
-
-// // const onResetClick = () => {
-// //   clearForm();
-// // };
-
-// form.addEventListener('submit', onFormSubmit);
+invalidInputsData.forEach((input) => {
+  input.addEventListener('input', (evt) => {
+    removeError(evt.target);
+  })
+})
