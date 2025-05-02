@@ -3,7 +3,7 @@ export const mainHeader = document.querySelector('.main-header');
 export const burger = mainHeader.querySelector('.main-header__burger');
 export const navList = mainHeader.querySelector('.main-header__nav-list');
 
-// export const slides = document.querySelectorAll('.hero__slider-item');
+export const slidesHero = document.querySelectorAll('.hero__slider-item');
 
 export const advantagesSlider = document.querySelector('.advantages__slider');
 export const advantagesSlidesList = advantagesSlider.querySelector('.advantages__slider-list');

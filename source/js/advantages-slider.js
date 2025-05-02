@@ -52,6 +52,7 @@ const onWindowResize = () => {
   checkDocumentWidth();
 };
 
+
 const initSlider = () => {
   advantagesSwiper = new Swiper('.advantages__slider', {
     modules: [Navigation],
@@ -74,8 +75,7 @@ const initSlider = () => {
     navigation: {
       nextEl: '.swiper-button-advantages-next',
       prevEl: '.swiper-button-advantages-prev'
-    },
-
+    }
   });
 };
 

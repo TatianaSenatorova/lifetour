@@ -10,7 +10,6 @@ import {
 } from './constants.js';
 
 let invalidInputsData = [inputPhone, inputEmail];
-const inputs = []
 
 startValidation();
 

@@ -10,7 +10,7 @@ export const DataForValidation = [
     DOM_INPUT: inputPhone,
     REG_EXP: /^(?=(?:.*\d){10,})[0-9\(\)\+\-\s]+$/,
     VALID: true,
-    ERROR: 'Не вводите буквы. Можно символы +, -, ( , )'
+    ERROR: 'Не вводите буквы. Можно символы +, -, ( , ). Минимум 10 цифр'
   },
   {
     DOM_INPUT: inputEmail,
