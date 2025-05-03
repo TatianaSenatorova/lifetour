@@ -134,6 +134,7 @@
   font-weight: 300;
   line-height: 1;
   color: $color-elephant;
+  word-break: break-word;
 
   &:hover {
     color: rgba(2, 102, 193, 0.1);
