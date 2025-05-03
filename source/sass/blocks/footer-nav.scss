@@ -41,7 +41,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 120px);
-  grid-auto-flow: column;
+  grid-auto-flow: row dense;
   justify-content: space-between;
   row-gap: 9px;
 

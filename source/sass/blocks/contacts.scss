@@ -96,6 +96,7 @@
 
   // padding-top: 20px;
   margin-bottom: 12px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
@@ -150,6 +151,7 @@
   font-weight: 600;
   line-height: 1;
   font-style: normal;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -174,6 +176,7 @@
   color: $color-elephant;
   cursor: pointer;
   transition: color 0.3s;
+  word-break: break-word;
 
   &:hover {
     color: rgba(2, 102, 193, 0.5);
