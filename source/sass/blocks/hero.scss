@@ -1,7 +1,8 @@
 .hero {
   --padding-desktop: 120px;
-  --destop-card-height: 800px;
-  --addition-space-bullet: 5px;
+  --bullet-radius-mobil: 26px;
+  --bullet-radius-tablet: 30px;
+  --bullet-margin-bottom: 40px;
 }
 
 .hero__slider {
@@ -31,20 +32,27 @@
   width: fit-content;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 35px;
+  position: relative;
+  bottom: calc(var(--bullet-margin-bottom) + var(--bullet-radius-mobil));
+  margin-bottom: calc(var(--bullet-radius-mobil) * -1);
+
+  @media (min-width: $tablet-width) {
+    bottom: calc(var(--bullet-margin-bottom) + var(--bullet-radius-tablet));
+    margin-bottom: calc(var(--bullet-radius-tablet) * -1);
+  }
 
   @media (min-width: $desktop-width) {
-    bottom: 86px;
     left: unset;
     transform: unset;
-    right: calc(50vw - $desktop-width / 2 + var(--padding-desktop) - var(--addition-space-bullet));
+    margin-left: auto;
+    padding-right: var(--padding-desktop);
   }
 }
 
 .hero__pagination-control {
   margin: 0;
-  width: 26px;
-  height: 26px;
+  width: var(--bullet-radius-mobil);
+  height: var(--bullet-radius-mobil);
   border-radius: 50%;
   outline: none;
   border: none;
@@ -73,8 +81,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 30px;
+    width: var(--bullet-radius-tablet);
+    height: var(--bullet-radius-tablet);
     background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px);
 
     &:hover {
