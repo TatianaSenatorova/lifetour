@@ -123,6 +123,10 @@
     max-width: 300px;
     margin-bottom: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+ }
 }
 
 .footer-nav__policy {

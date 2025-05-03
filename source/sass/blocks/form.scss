@@ -31,7 +31,6 @@
     font-size: 22px;
     font-weight: 800;
     line-height: 1;
-    word-break: break-word;
   }
 
   p {
@@ -111,7 +110,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 360px);
-    column-gap: 30px;
+    grid-auto-flow: row dense;
+    gap: 30px;
   }
 }
 
@@ -130,11 +130,13 @@
 .form__button {
   width: 100%;
   min-height: 58px;
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
 
   @media (min-width: $desktop-width) {
-    min-height: unset;
+    min-height: 56px;
+    height: fit-content;
+    grid-column: 2 / -1;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
