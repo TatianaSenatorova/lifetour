@@ -41,6 +41,7 @@
   @media (min-width: $tablet-width) {
     bottom: calc(var(--bullet-margin-bottom) + var(--bullet-radius-tablet));
     margin-bottom: calc(var(--bullet-radius-tablet) * -1);
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +49,7 @@
     transform: unset;
     margin-left: auto;
     padding-right: var(--padding-desktop);
+    max-width: 650px;
   }
 }
 

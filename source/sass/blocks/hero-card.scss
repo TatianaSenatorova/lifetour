@@ -128,11 +128,15 @@
   margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    &:last-of-type {
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 134px;
+    &:last-of-type {
+      margin-bottom: 134px;
+    }
   }
 }
 
@@ -143,7 +147,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     grid-column: 1 / 2;
+    max-width: 1000px;
   }
 }
 
