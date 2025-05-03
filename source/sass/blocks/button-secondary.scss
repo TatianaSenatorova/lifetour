@@ -15,6 +15,7 @@
   background-color: transparent;
   cursor: pointer;
   transition: color 0.3s;
+  word-break: break-word;
 
   &:hover {
     color: rgba(2, 102, 193, 0.1);
@@ -46,4 +47,5 @@
 
 .button-secondary__arrow {
   display: block;
+  flex-shrink: 0;
 }

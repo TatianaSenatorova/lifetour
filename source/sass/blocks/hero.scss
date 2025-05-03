@@ -17,6 +17,7 @@
 
 .hero__slider-list {
   margin: 0;
+  margin-top: auto;
   padding: 0;
   list-style: none;
 }
@@ -30,6 +31,7 @@
   align-items: center;
   gap: 10px;
   width: fit-content;
+  max-width: 300px;
   left: 50%;
   transform: translateX(-50%);
   position: relative;
