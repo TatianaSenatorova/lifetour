@@ -9,7 +9,7 @@ const onBurgerClick = () => {
 };
 
 const onNavListClick = (evt) => {
-  if(evt.target.classList.contains('main-header__link')) {
+  if(evt.target.classList.contains('main-header__nav-link')) {
     mainHeader.classList.remove('main-header--nav-is-opened');
   }
 };
