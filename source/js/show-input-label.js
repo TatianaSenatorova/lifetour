@@ -3,9 +3,11 @@ import {
 } from './dom-elements.js';
 
 const onFormChange = (evt) => {
-  if (evt.target.classList.contains('input__field')) {
-    const input = evt.target.closest('.input');
-    evt.target.value.trim() !== '' ? input.classList.add('input--hide-label') : input.classList.remove('input--hide-label');
+  const input = evt.target.closest('.input');
+  if (evt.target.value.trim() !== '') {
+    input.classList.add('input--hide-label');
+  } else {
+    input.classList.remove('input--hide-label');
   }
 };
 
