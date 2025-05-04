@@ -1,7 +1,7 @@
 .learning-card {
   max-width: 250px;
   padding-left: 49px;
-
+  min-height: 36px;
   background-repeat: no-repeat;
   background-size: 25px 25px;
   background-position: top 1px left 15px;
@@ -26,6 +26,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 44px;
     padding-left: 35px;
     padding-bottom: 0;
     background-position: top 0 left 0;
@@ -33,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     width: 253px;
+    min-height: 48px;
     padding-left: 45px;
     padding-right: 10px;
     background-position: top 2px left 10px;

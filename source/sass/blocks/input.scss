@@ -1,5 +1,8 @@
 .input {
-  position: relative;
+  // position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   min-height: 50px;
 
   --padding-input-mobile: 15px;
@@ -11,6 +14,8 @@
 }
 
 .input__field {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   width: 100%;
   border-radius: 2px;
   font-family: $primary-font;
@@ -59,16 +64,22 @@
 }
 
 .input__label {
-  position: absolute;
-  left: var(--padding-input-mobile);
-  top: 50%;
-  transform: translateY(-50%);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 13px var(--padding-input-mobile);
+  display: flex;
+  align-items: center;
+  // position: absolute;
+  // left: var(--padding-input-mobile);
+  // top: 50%;
+  // transform: translateY(-50%);
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
   color: rgba(45, 56, 63, 0.5);
   opacity: 1;
   visibility: visible;
+  z-index: 0;
   transition: opacity 0.5, visibility 0.5s;
 
   .input:has(.input__field:focus) & {
@@ -90,18 +101,18 @@
   }
 }
 
-.input__error-text {
-  display: none;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  color: rgba(45, 56, 63, 0.5);
+// .input__error-text {
+//   display: none;
+//   position: absolute;
+//   left: 15px;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 1;
+//   color: rgba(45, 56, 63, 0.5);
 
-  &--show {
-    display: block;
-  }
-}
+//   &--show {
+//     display: block;
+//   }
+// }

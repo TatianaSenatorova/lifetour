@@ -37,7 +37,10 @@
 
 .reviews__title {
   margin: 0;
-  max-width: 550px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 550px;
+  }
 }
 
 .reviews__buttons-swiper-list {
