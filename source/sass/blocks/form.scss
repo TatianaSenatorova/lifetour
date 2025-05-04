@@ -1,16 +1,12 @@
 .form {
   padding: 177px 0 40px;
-  width: 258px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 186px 0 40px;
-    width: 360px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 293px 0 40px;
-    width: 960px;
   }
 }
 
@@ -92,7 +88,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  width: 100%;
+  max-width: 258px;
 
   @media (min-width: $desktop-width) {
     width: fit-content;
