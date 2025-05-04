@@ -22,7 +22,7 @@ const showError = () => {
   inputParent.classList.add('input--error');
   invalidInputsData[0].DOM_INPUT.setCustomValidity(invalidInputsData[0].ERROR);
   invalidInputsData[0].DOM_INPUT.reportValidity(invalidInputsData[0].ERROR);
-}
+};
 
 function startValidation() {
   form.addEventListener('submit', (event) => {
@@ -32,12 +32,12 @@ function startValidation() {
       showError();
     }
     blockSubmitButton(false);
-  })
-};
+  });
+}
 
 function isValid() {
   invalidInputsData = [];
-  DataForValidation.forEach(element => {
+  DataForValidation.forEach((element) => {
     if (!(element.REG_EXP.test(element.DOM_INPUT.value.trim()))) {
       element.VALID = !element.VALID;
       invalidInputsData.push(element);
@@ -54,10 +54,10 @@ const removeError = (target) => {
     target.blur();
     target.focus();
   }
-}
+};
 
 invalidInputsData.forEach((input) => {
   input.addEventListener('input', (evt) => {
     removeError(evt.target);
-  })
-})
+  });
+});

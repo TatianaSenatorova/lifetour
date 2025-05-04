@@ -12,47 +12,6 @@ import {
 let slidesCounter = advantagesSlides.length;
 let advantagesSwiper;
 
-const addAdditionalSlides = () => {
-  advantagesSlides.forEach((slide) => {
-    const clonedSlide = slide.cloneNode(true);
-    advantagesSlidesList.appendChild(clonedSlide);
-    slidesCounter++;
-  });
-};
-
-const removeAdditionalSlides = () => {
-  const currentSlides = advantagesSlidesList.querySelectorAll('.advantages__slider-item');
-  currentSlides.forEach((slide, index) => {
-    if (index > INIT_NUMBER_ADVANTAGES_SLIDES - 1) {
-      slide.remove();
-      slidesCounter--;
-    }
-  });
-};
-
-const checkDocumentWidth = () => {
-  if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter > INIT_NUMBER_ADVANTAGES_SLIDES) {
-
-  } else if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
-    addAdditionalSlides();
-    initSlider();
-
-  } else if (advantagesSwiper) {
-    removeAdditionalSlides();
-    advantagesSwiper.destroy();
-  }
-};
-
-
-const onDocumentDomContentLoaded = () => {
-  checkDocumentWidth();
-};
-
-const onWindowResize = () => {
-  checkDocumentWidth();
-};
-
-
 const initSlider = () => {
   advantagesSwiper = new Swiper('.advantages__slider', {
     modules: [Navigation],
@@ -77,6 +36,45 @@ const initSlider = () => {
       prevEl: '.swiper-button-advantages-prev'
     }
   });
+};
+
+const addAdditionalSlides = () => {
+  advantagesSlides.forEach((slide) => {
+    const clonedSlide = slide.cloneNode(true);
+    advantagesSlidesList.appendChild(clonedSlide);
+    slidesCounter++;
+  });
+};
+
+const removeAdditionalSlides = () => {
+  const currentSlides = advantagesSlidesList.querySelectorAll('.advantages__slider-item');
+  currentSlides.forEach((slide, index) => {
+    if (index > INIT_NUMBER_ADVANTAGES_SLIDES - 1) {
+      slide.remove();
+      slidesCounter--;
+    }
+  });
+};
+
+const checkDocumentWidth = () => {
+  if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter > INIT_NUMBER_ADVANTAGES_SLIDES && advantagesSwiper) {
+
+  } else
+    if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
+      addAdditionalSlides();
+      initSlider();
+    } else if (advantagesSwiper) {
+      removeAdditionalSlides();
+      advantagesSwiper.destroy();
+    }
+};
+
+const onDocumentDomContentLoaded = () => {
+  checkDocumentWidth();
+};
+
+const onWindowResize = () => {
+  checkDocumentWidth();
 };
 
 document.addEventListener('DOMContentLoaded', onDocumentDomContentLoaded);

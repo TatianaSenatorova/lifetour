@@ -8,7 +8,7 @@ export const DESKTOP_WIDTH = 1440;
 export const DataForValidation = [
   {
     DOM_INPUT: inputPhone,
-    REG_EXP: /^(?=(?:.*\d){10,})[0-9\(\)\+\-\s]+$/,
+    REG_EXP: /^(?=(?:.*\d){10,})[0-9()+\-\s]+$/,
     VALID: true,
     ERROR: 'Не вводите буквы. Можно символы +, -, ( , ). Минимум 10 цифр'
   },

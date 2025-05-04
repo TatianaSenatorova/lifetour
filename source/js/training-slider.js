@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const trainingSwiper = new Swiper('.swiper-training', {
+export const trainingSwiper = new Swiper('.swiper-training', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 1,

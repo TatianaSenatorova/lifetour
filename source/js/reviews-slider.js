@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const reviewsSwiper = new Swiper('.swiper-reviews', {
+export const reviewsSwiper = new Swiper('.swiper-reviews', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 1,

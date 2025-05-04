@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const gallerySwiper = new Swiper('.swiper-gallery', {
+export const gallerySwiper = new Swiper('.swiper-gallery', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 2,
@@ -12,7 +12,6 @@ const gallerySwiper = new Swiper('.swiper-gallery', {
   breakpoints: {
     768: {
       slidesPerView: 3,
-      // spaceBetween: 18,
     },
 
     1440: {

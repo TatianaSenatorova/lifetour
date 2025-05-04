@@ -2,9 +2,6 @@ import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import { slidesHero } from './dom-elements.js';
 
-
-const className = 'hero__pagination-control';
-
 const unfocusNonActiveSlides = () => {
   slidesHero.forEach((slide) => {
     if (!slide.classList.contains('swiper-slide-active')) {
@@ -12,10 +9,10 @@ const unfocusNonActiveSlides = () => {
     } else {
       slide.querySelector('.hero-card__button').removeAttribute('tabindex');
     }
-  })
-}
+  });
+};
 
-const heroSwiper = new Swiper('.swiper-hero', {
+export const heroSwiper = new Swiper('.swiper-hero', {
   modules: [Pagination],
   direction: 'horizontal',
   loop: true,
@@ -34,16 +31,15 @@ const heroSwiper = new Swiper('.swiper-hero', {
     bulletActiveClass: 'hero__pagination-control--is-active',
     type: 'bullets',
     clickable: true,
-    renderBullet: function (index, className) {
-      return `<button class="${className}"><span class="visually-hidden">Перейти к слайду ${index + 1
-        }</span></button>`;
+    renderBullet: function (index, bulletClass) {
+      return `<button class=${bulletClass}><span class="visually-hidden">Перейти к слайду ${index + 1
+      }</span></button>`;
     },
     enabled: true,
   },
 
   on: {
     init: unfocusNonActiveSlides(),
+    slideChange: unfocusNonActiveSlides()
   }
 });
-
-heroSwiper.on('slideChange', unfocusNonActiveSlides());
