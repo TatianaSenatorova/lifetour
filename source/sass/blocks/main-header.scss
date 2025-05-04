@@ -70,6 +70,10 @@
   }
 }
 
+.main-header__burger svg {
+  flex-shrink: 0;
+}
+
 .main-header__close-icon {
   display: none;
 
