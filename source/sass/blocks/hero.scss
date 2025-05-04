@@ -68,7 +68,6 @@
   cursor: pointer;
   transition: background-image 0.3s;
 
-
   &:hover {
     background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
   }

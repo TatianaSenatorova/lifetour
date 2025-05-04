@@ -198,17 +198,9 @@
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
-  // @media (min-width: $tablet-width) {
-  //   grid-column: 2 / 3;
-
-  //   // justify-self: unset;
-  // }
-
   @media (min-width: $desktop-width) {
     grid-column: unset;
     grid-row: unset;
-
-    // justify-self: unset;
   }
 }
 

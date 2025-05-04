@@ -19,4 +19,3 @@ export const DataForValidation = [
     ERROR: 'Введите email в формате ____@___.__'
   }
 ];
-

@@ -2,15 +2,11 @@ export const body = document.querySelector('.page__body');
 export const mainHeader = document.querySelector('.main-header');
 export const burger = mainHeader.querySelector('.main-header__burger');
 export const navList = mainHeader.querySelector('.main-header__nav-list');
-
 export const slidesHero = document.querySelectorAll('.hero__slider-item');
-
 export const advantagesSlider = document.querySelector('.advantages__slider');
 export const advantagesSlidesList = advantagesSlider.querySelector('.advantages__slider-list');
 export const advantagesSlides = advantagesSlider.querySelectorAll('.advantages__slider-item');
-
 export const form = document.querySelector('.form');
-export const inputsList = Array.from(form.querySelectorAll('.form__type-input'));
 export const inputPhone = form.querySelector('.input__field[name=\'phone\']');
 export const inputEmail = form.querySelector('.input__field[name=\'email\']');
 export const submitButton = form.querySelector('.form__button');

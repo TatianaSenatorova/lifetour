@@ -25,4 +25,3 @@ export const gallerySwiper = new Swiper('.swiper-gallery', {
     prevEl: '.swiper-button-gallery-prev'
   },
 });
-
