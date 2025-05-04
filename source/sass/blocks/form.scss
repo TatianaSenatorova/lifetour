@@ -88,11 +88,14 @@
   margin: 0;
   padding: 0;
   border: none;
-  max-width: 258px;
 
   @media (min-width: $desktop-width) {
     width: fit-content;
   }
+}
+
+.form__legend {
+  display: block;
 }
 
 .form__inputs-list {
