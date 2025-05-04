@@ -2,16 +2,6 @@ import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import { slidesHero } from './dom-elements.js';
 
-const unfocusNonActiveSlides = () => {
-  slidesHero.forEach((slide, index) => {
-    if (index === heroSwiper.activeIndex) {
-      slide.querySelector('.hero-card__button').removeAttribute('tabindex');
-    } else {
-      slide.querySelector('.hero-card__button').setAttribute('tabindex', '-1');
-    }
-  });
-};
-
 export const heroSwiper = new Swiper('.swiper-hero', {
   modules: [Pagination],
   direction: 'horizontal',
@@ -33,10 +23,20 @@ export const heroSwiper = new Swiper('.swiper-hero', {
     clickable: true,
     renderBullet: function (index, bulletClass) {
       return `<button class=${bulletClass}><span class="visually-hidden">Перейти к слайду ${index + 1
-        }</span></button>`;
+      }</span></button>`;
     },
     enabled: true,
   },
 });
+
+const unfocusNonActiveSlides = () => {
+  slidesHero.forEach((slide, index) => {
+    if (index === heroSwiper.activeIndex) {
+      slide.querySelector('.hero-card__button').removeAttribute('tabindex');
+    } else {
+      slide.querySelector('.hero-card__button').setAttribute('tabindex', '-1');
+    }
+  });
+};
 
 heroSwiper.on('slideChange', unfocusNonActiveSlides);

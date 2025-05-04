@@ -57,16 +57,13 @@ const removeAdditionalSlides = () => {
 };
 
 const checkDocumentWidth = () => {
-  if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter > INIT_NUMBER_ADVANTAGES_SLIDES && advantagesSwiper) {
-
-  } else
-    if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
-      addAdditionalSlides();
-      initSlider();
-    } else if (advantagesSwiper) {
-      removeAdditionalSlides();
-      advantagesSwiper.destroy();
-    }
+  if (document.documentElement.clientWidth >= DESKTOP_WIDTH && slidesCounter <= INIT_NUMBER_ADVANTAGES_SLIDES) {
+    addAdditionalSlides();
+    initSlider();
+  } else if (advantagesSwiper && document.documentElement.clientWidth < DESKTOP_WIDTH) {
+    removeAdditionalSlides();
+    advantagesSwiper.destroy();
+  }
 };
 
 const onDocumentDomContentLoaded = () => {
