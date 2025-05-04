@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: $color-black-forest;
+  --star-width: 16px;
+  --space-between-stars: 1px;
 
   @media (min-width: $tablet-width) {
     min-width: 330px;
@@ -157,32 +159,32 @@
 
 .tours-card__conditions-item--one-level::before {
   display: block;
-  width: 16px;
-  max-width: 16px;
+  width: var(--star-width);
+  max-width: var(--star-width);
 }
 
 .tours-card__conditions-item--two-level::before {
   display: block;
-  width: 33px;
+  width: calc(var(--star-width) * 2 + var(--space-between-stars));
   max-width: 33px;
 }
 
 .tours-card__conditions-item--three-level::before {
   display: block;
-  width: 50px;
-  max-width: 50px;
+  width: calc(var(--star-width) * 3 + var(--space-between-stars) * 2);
+  max-width: calc(var(--star-width) * 3 + var(--space-between-stars) * 2);
 }
 
 .tours-card__conditions-item--four-level::before {
   display: block;
-  width: 67px;
-  max-width: 67px;
+  width: calc(var(--star-width) * 4 + var(--space-between-stars) * 3);
+  max-width: calc(var(--star-width) * 4 + var(--space-between-stars) * 3);
 }
 
 .tours-card__conditions-item--five-level::before {
   display: block;
-  width: 84px;
-  max-width: 84px;
+  width: calc(var(--star-width) * 5 + var(--space-between-stars) * 4);
+  max-width: calc(var(--star-width) * 5 + var(--space-between-stars) * 4);
 }
 
 .tours-card__conditions-info {
