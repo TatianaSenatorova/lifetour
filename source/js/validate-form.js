@@ -51,6 +51,8 @@ const removeError = (target) => {
     target.closest('.input').classList.remove('input--error');
     target.setCustomValidity(' ');
     target.reportValidity();
+    target.blur();
+    target.focus();
   }
 }
 

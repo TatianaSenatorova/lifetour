@@ -12,11 +12,13 @@ const reviewsSwiper = new Swiper('.swiper-reviews', {
   breakpoints: {
     768: {
       slidesPerView: 'auto',
+      autoHeight: false,
     },
 
     1440: {
       slidesPerView: 'auto',
       spaceBetween: 120,
+      autoHeight: false,
     }
   },
 
