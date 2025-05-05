@@ -64,10 +64,13 @@
 .advantages__slider-item {
   display: block;
   max-width: fit-content;
-  height: auto;
 
   @media (min-width: $tablet-width) {
     width: min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
   }
 }
 

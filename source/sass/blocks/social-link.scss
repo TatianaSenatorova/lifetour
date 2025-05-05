@@ -6,6 +6,10 @@
   &--without-padding-right {
     padding: 8px 0 8px 8px;
   }
+
+  &--is-disabled {
+    pointer-events: none;
+  }
 }
 
 .social-link__svg-wrapper {

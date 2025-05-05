@@ -70,12 +70,11 @@
 
 .reviews__slider-list .reviews__slider-item {
   padding: 16px 0 0;
-  height: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     padding: 27px 0 26px;
     width: fit-content;
-    height: auto;
   }
 
   @media (min-width: $desktop-width) {

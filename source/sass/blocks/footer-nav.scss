@@ -139,9 +139,10 @@
   line-height: 1;
   color: $color-elephant;
   word-break: break-word;
+  transition: color 0.3s;
 
   &:hover {
-    color: rgba(2, 102, 193, 0.1);
+    color: rgba(2, 102, 193, 0.5);
   }
 
   &:focus {
