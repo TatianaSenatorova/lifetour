@@ -3,6 +3,7 @@
   --bullet-radius-mobil: 26px;
   --bullet-radius-tablet: 30px;
   --bullet-margin-bottom: 40px;
+  --bullet-margin-bottom-desktop: 87px;
 }
 
 .hero__slider {
@@ -47,8 +48,9 @@
   @media (min-width: $desktop-width) {
     left: unset;
     transform: unset;
+    bottom: calc(var(--bullet-margin-bottom-desktop) + var(--bullet-radius-tablet));
     margin-left: auto;
-    padding-right: var(--padding-desktop);
+    padding-right: 115px;
     max-width: 650px;
   }
 }
