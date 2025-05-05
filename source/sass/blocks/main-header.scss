@@ -5,8 +5,8 @@
   background-color: $color-navy-blue;
 
   --link-padding: 4px;
-  --mobile-side-padding: 15px;
-  --tablet-side-padding: 45px;
+  --mobile-side-padding: 10px;
+  --tablet-side-padding: 40px;
 
   z-index: $z-index-second;
 
@@ -122,7 +122,7 @@
 .main-header__nav-list {
   width: 100vw;
   margin: 0 auto;
-  padding: 30px calc(50vw - $mobile-width / 2 + var(--mobile-side-padding));
+  padding: 12px calc(50vw - $mobile-width / 2 + var(--mobile-side-padding));
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@
   background-color: $color-navy-blue;
 
   @media (min-width: $tablet-width) {
-    padding: 30px calc(50vw - $tablet-width / 2 + var(--tablet-side-padding));
+    padding: 28px calc(50vw - $tablet-width / 2 + var(--tablet-side-padding));
     gap: 20px;
   }
 
