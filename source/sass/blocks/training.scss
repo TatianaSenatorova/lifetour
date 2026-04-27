@@ -3,11 +3,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 40px 0 17px;
-    background-image:
-      image-set(url("../../img/backgrounds/clouds-tablet-2@1x.webp") type("image/webp") 1x,
-      url("../../img/backgrounds/clouds-tablet-2@2x.webp") type("image/webp") 2x,
-      url("../../img/backgrounds/clouds-tablet-2@1x.jpg") type("image/jpeg") 1x,
-      url("../../img/backgrounds/clouds-tablet-2@2x.jpg") type("image/jpeg") 2x);
+    background-image: image-set(
+      url("/img/backgrounds/clouds-tablet-2@1x.webp") type("image/webp") 1x,
+      url("/img/backgrounds/clouds-tablet-2@2x.webp") type("image/webp") 2x,
+      url("/img/backgrounds/clouds-tablet-2@1x.jpg") type("image/jpeg") 1x,
+      url("/img/backgrounds/clouds-tablet-2@2x.jpg") type("image/jpeg") 2x
+    );
     background-repeat: no-repeat;
     background-position: left calc(50vw - 81px) bottom 158px;
     background-size: 840px 280px;
@@ -157,21 +158,41 @@
 .training__learning-item {
   position: relative;
   padding-left: 14px;
-  background-image: linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
+  background-image: linear-gradient(
+    to right,
+    transparent 6px,
+    $color-navy-blue 6px,
+    $color-navy-blue 8px,
+    transparent 8px
+  );
   background-repeat: no-repeat;
   background-position: left 0 top 0;
 
   &:first-child {
     background-image:
       linear-gradient(to bottom, $color-white 14px, transparent 14px),
-      linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
+      linear-gradient(
+        to right,
+        transparent 6px,
+        $color-navy-blue 6px,
+        $color-navy-blue 8px,
+        transparent 8px
+      );
   }
 
   &:last-child {
     background-image:
       linear-gradient(to bottom, transparent 25px, $color-white 26px),
-      linear-gradient(to right, transparent 6px, $color-navy-blue 6px, $color-navy-blue 8px, transparent 8px);
-    background-size: 14px 100%, 14px 100%;
+      linear-gradient(
+        to right,
+        transparent 6px,
+        $color-navy-blue 6px,
+        $color-navy-blue 8px,
+        transparent 8px
+      );
+    background-size:
+      14px 100%,
+      14px 100%;
   }
 
   &:not(:last-child) {
@@ -225,7 +246,11 @@
     background-size: 100% 2px;
 
     &:first-child {
-      background-image: linear-gradient(to right, $color-white 20px, $color-navy-blue 20px);
+      background-image: linear-gradient(
+        to right,
+        $color-white 20px,
+        $color-navy-blue 20px
+      );
       background-size: 100% 2px;
       background-position: left 0 bottom 14px;
       background-repeat: no-repeat;

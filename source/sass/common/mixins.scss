@@ -59,3 +59,20 @@
     transform: translateX(-50%);
   }
 }
+
+@mixin fluid(
+  $property,
+  $minSize,
+  $maxSize,
+  $minVp: $vp-mobile-num,
+  $maxVp: $vp-wide-desktop-num
+) {
+  #{$property}: clamp(
+    #{$minSize}px,
+    calc(
+      #{$minSize}px + (#{$maxSize} - #{$minSize}) *
+        ((100vw - #{$minVp}px) / (#{$maxVp} - #{$minVp}))
+    ),
+    #{$maxSize}px
+  );
+}

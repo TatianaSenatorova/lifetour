@@ -1,11 +1,22 @@
 .hero-card {
+  position: relative;
   background-color: $color-air-force-blue;
-  min-height: 100%;
+  @include fluid(min-height, 568, 934, $vp-mobile-num, $vp-tablet-num);
   display: grid;
   grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    min-height: 934px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+  }
 }
 
 .hero-card__image-wrap {
+  position: absolute;
+  inset: 0;
   z-index: 0;
   min-height: 100%;
   grid-area: 1 / 1 / 2 / 2;

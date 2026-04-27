@@ -6,6 +6,10 @@
   --bullet-margin-bottom-desktop: 87px;
 }
 
+.hero__inner {
+  width: 100%;
+}
+
 .hero__slider {
   overflow: hidden;
   position: relative;
@@ -48,9 +52,11 @@
   @media (min-width: $desktop-width) {
     left: unset;
     transform: unset;
-    bottom: calc(var(--bullet-margin-bottom-desktop) + var(--bullet-radius-tablet));
+    right: calc((100vw - 1440px) / 2 + 115px);
+    bottom: calc(
+      var(--bullet-margin-bottom-desktop) + var(--bullet-radius-tablet)
+    );
     margin-left: auto;
-    padding-right: 115px;
     max-width: 650px;
   }
 }
@@ -66,45 +72,99 @@
   padding: 0;
   opacity: 1;
   background-color: transparent;
-  background-image: radial-gradient(circle, transparent 6px, $color-white 8px, transparent 9px);
+  background-image: radial-gradient(
+    circle,
+    transparent 6px,
+    $color-white 8px,
+    transparent 9px
+  );
   cursor: pointer;
   transition: background-image 0.3s;
 
   &:hover {
-    background-image: radial-gradient(circle, $color-gainsboro 7px, $color-white 8px, transparent 9px);
+    background-image: radial-gradient(
+      circle,
+      $color-gainsboro 7px,
+      $color-white 8px,
+      transparent 9px
+    );
   }
 
   &:focus {
-    background-image: radial-gradient(circle, transparent 7px, $color-white 8px, transparent 9px, transparent 11px, rgba(255, 255, 255, 0.5) 12px, transparent 13px);
+    background-image: radial-gradient(
+      circle,
+      transparent 7px,
+      $color-white 8px,
+      transparent 9px,
+      transparent 11px,
+      rgba(255, 255, 255, 0.5) 12px,
+      transparent 13px
+    );
   }
 
   &:active {
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 7px, $color-white 8px, transparent 9px);
+    background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.5) 7px,
+      $color-white 8px,
+      transparent 9px
+    );
   }
 
   &--is-active {
-    background-image: radial-gradient(circle, $color-white 8px, transparent 9px);
+    background-image: radial-gradient(
+      circle,
+      $color-white 8px,
+      transparent 9px
+    );
   }
 
   @media (min-width: $tablet-width) {
     width: var(--bullet-radius-tablet);
     height: var(--bullet-radius-tablet);
-    background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px);
+    background-image: radial-gradient(
+      circle,
+      transparent 9px,
+      $color-white 10px,
+      transparent 11px
+    );
 
     &:hover {
-      background-image: radial-gradient(circle, $color-gainsboro 9px, $color-white 10px, transparent 11px);
+      background-image: radial-gradient(
+        circle,
+        $color-gainsboro 9px,
+        $color-white 10px,
+        transparent 11px
+      );
     }
 
     &:focus {
-      background-image: radial-gradient(circle, transparent 9px, $color-white 10px, transparent 11px, transparent 13px, rgba(255, 255, 255, 0.5) 14px, transparent 15px);
+      background-image: radial-gradient(
+        circle,
+        transparent 9px,
+        $color-white 10px,
+        transparent 11px,
+        transparent 13px,
+        rgba(255, 255, 255, 0.5) 14px,
+        transparent 15px
+      );
     }
 
     &:active {
-      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 9px, $color-white 10px, transparent 11px);
+      background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.5) 9px,
+        $color-white 10px,
+        transparent 11px
+      );
     }
 
     &--is-active {
-      background-image: radial-gradient(circle, $color-white 10px, transparent 11px);
+      background-image: radial-gradient(
+        circle,
+        $color-white 10px,
+        transparent 11px
+      );
     }
   }
 }
