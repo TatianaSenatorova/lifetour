@@ -1,5 +1,5 @@
 .training-card {
-  min-width: 290px;
+  width: 100%;
   max-width: 290px;
   min-height: 356px;
   margin: 0 auto;
@@ -8,15 +8,11 @@
   background-color: $color-white;
 
   @media (min-width: $tablet-width) {
-    min-width: 100%;
-    max-width: 100%;
     min-height: 338px;
     height: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 285px;
-    max-width: 285px;
     min-height: 356px;
   }
 }
