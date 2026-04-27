@@ -69,6 +69,7 @@
 }
 
 .hero-card__content {
+  max-width: 460px;
   text-align: center;
   font-size: 15px;
   font-weight: 400;
@@ -100,6 +101,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 800px;
     margin-bottom: 27px;
     max-height: 305px;
 

@@ -1,6 +1,6 @@
 .tours-card {
-  min-width: 290px;
-  max-width: 290px;
+  width: 100%;
+  max-width: 380px;
   min-height: 416px;
   display: grid;
   grid-template-columns: 1fr;
@@ -8,16 +8,6 @@
 
   --star-width: 16px;
   --space-between-stars: 1px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 330px;
-    max-width: 330px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 380px;
-    max-width: 380px;
-  }
 }
 
 .tours-card__image-wrap {

@@ -5,15 +5,16 @@ export const toursSwiper = new Swiper('.swiper-tours', {
   modules: [Navigation],
   direction: 'horizontal',
   slidesPerView: 1,
+  spaceBetween: 16,
   initialSlide: 0,
 
   breakpoints: {
-    768: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 18,
     },
 
-    1440: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 30,
     }
