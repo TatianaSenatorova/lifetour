@@ -1,4 +1,6 @@
 .logo {
+  width: 142px;
+  aspect-ratio: 142 / 42;
   opacity: 1;
   transition: opacity 0.3s;
 
@@ -9,8 +11,20 @@
   &--dark:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 205px;
+    height: 62px;
+
+    &--dark {
+      width: 200px;
+      height: 60px;
+    }
+  }
 }
 
 .logo img {
+  width: 100%;
+  height: 100%;
   display: block;
 }
