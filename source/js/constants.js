@@ -4,7 +4,7 @@ import {
 } from './dom-elements.js';
 
 export const INIT_NUMBER_ADVANTAGES_SLIDES = 5;
-export const DESKTOP_WIDTH = 1440;
+export const DESKTOP_WIDTH = 1024;
 export const DataForValidation = [
   {
     DOM_INPUT: inputPhone,

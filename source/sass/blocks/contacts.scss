@@ -16,15 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include fluid(
-      padding-inline,
-      60,
-      120,
-      $vp-desktop-num,
-      $vp-wide-desktop-num
-    );
     display: grid;
-    grid-template-columns: 500px 600px;
+    grid-template-columns: minmax(0, 500px) minmax(0, 600px);
     align-items: center;
     justify-content: space-between;
   }
