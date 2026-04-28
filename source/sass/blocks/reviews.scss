@@ -30,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 120px;
+    // padding-right: 120px;
   }
 }
 
@@ -49,13 +49,18 @@
     display: flex;
     position: absolute;
     top: 20px;
-    right: calc(50vw - var(--inner-container-tablet) / 2);
+    right: 45px;
   }
 
   @media (min-width: $desktop-width) {
     right: calc(50vw - var(--inner-container-desktop) / 2);
     top: 45px;
+    right: 60px;
   }
+  @media (min-width: $wide-desktop-width) {
+   right: 120px;
+  }
+
 }
 
 .reviews__slider-list {

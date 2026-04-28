@@ -1,6 +1,5 @@
 .training-card {
   width: 100%;
-  max-width: 290px;
   min-height: 356px;
   margin: 0 auto;
   padding: 14px;
@@ -23,6 +22,7 @@
 
 .training-card__image-wrap img {
   display: block;
+  width: 100%;
   height: 200px;
 }
 

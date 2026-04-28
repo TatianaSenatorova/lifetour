@@ -48,7 +48,8 @@ const enableSlider = () => {
     loop: true,
     slidesPerView: 'auto',
     slidesPerGroup: 2,
-    centeredSlides: true,
+   centeredSlides: true,
+    roundLengths: true,
     spaceBetween: 30,
     initialSlide: 2,
     loopAddBlankSlides: false,
@@ -70,8 +71,8 @@ const disableSlider = () => {
   removeAdditionalSlides();
 };
 
-const handleBreakpoint = (e) => {
-  if (e.matches) {
+const handleBreakpoint = (evt) => {
+  if (evt.matches) {
     enableSlider();
   } else {
     disableSlider();

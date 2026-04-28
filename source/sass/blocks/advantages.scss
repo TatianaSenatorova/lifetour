@@ -52,6 +52,16 @@
 .advantages__slider {
   margin: 0 auto;
   overflow: hidden;
+   transform: translateZ(0);
+}
+
+.advantages__slider .swiper-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.advantages__slider-wrapper {
+  overflow: hidden;
 }
 
 .advantages__slider-list {
@@ -71,9 +81,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     margin-bottom: 50px;
+    flex-direction: unset;
     gap: unset;
-    flex-wrap: nowrap;
+    flex-wrap: unset;
     justify-content: unset;
   }
 }
