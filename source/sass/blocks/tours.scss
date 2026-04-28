@@ -46,7 +46,6 @@
   margin: 0 auto 25px;
   padding: 0;
   list-style: none;
-  display: flex;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 53px;
@@ -54,7 +53,6 @@
 }
 
 .tours__slider-item {
-  width: 100%;
   display: flex;
   justify-content: center;
   height: auto;

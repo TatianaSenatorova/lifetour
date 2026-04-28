@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 200px 800px 200px;
+   grid-template-columns: auto 1fr auto;
   }
 }
 

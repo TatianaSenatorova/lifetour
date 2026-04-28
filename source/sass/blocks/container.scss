@@ -1,10 +1,14 @@
 .container {
   width: 100%;
-  max-width: $desktop-width;
+  max-width: $wide-desktop-width;
   margin: 0 auto;
   padding: 0 15px;
 
   &--without-left-padding {
+    padding: 0;
+  }
+
+  &--wide {
     padding: 0;
   }
 
@@ -18,17 +22,39 @@
     &--without-right-padding {
       padding: 0 0 0 45px;
     }
+
+    &--wide {
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    @include fluid(
+      padding-inline,
+      60,
+      120,
+      $vp-desktop-num,
+      $vp-wide-desktop-num
+    );
 
     &--without-left-padding {
-      padding: 0 120px 0 0;
+      @include fluid(
+        padding-right,
+        60,
+        120,
+        $vp-desktop-num,
+        $vp-wide-desktop-num
+      );
     }
 
     &--without-right-padding {
-      padding: 0 0 0 120px;
+      @include fluid(
+        padding-left,
+        60,
+        120,
+        $vp-desktop-num,
+        $vp-wide-desktop-num
+      );
     }
 
     &--100vw-desktop {

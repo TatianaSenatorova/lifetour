@@ -16,7 +16,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
+    @include fluid(
+      padding-inline,
+      60,
+      120,
+      $vp-desktop-num,
+      $vp-wide-desktop-num
+    );
     display: grid;
     grid-template-columns: 500px 600px;
     align-items: center;
@@ -25,12 +31,13 @@
 }
 
 .contacts__top-wrapper {
-  width: $mobile-width;
+  width: 100%;
+  max-width: $mobile-width;
   margin: 0 0 29px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    max-width: $tablet-width;
     margin-bottom: 29px;
     padding: 0 45px;
   }
@@ -224,9 +231,18 @@
 }
 
 .contacts__wrap-image {
+  height: 343px;
+  overflow: hidden;
   background-color: $color-lime-green;
+
+  @media (min-width: $tablet-width) {
+    height: 340px;
+  }
 }
 
 .contacts__image {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
