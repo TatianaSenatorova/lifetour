@@ -32,6 +32,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 142px 1fr 157px;
+    gap: 25px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
     grid-template-columns: 205px 1fr 157px;
     gap: 40px;
   }
@@ -98,7 +103,9 @@
   opacity: 0;
   background-color: rgba(45, 56, 63, 0.6);
   overflow-y: auto;
-  transition: opacity 0.5s, visibility 0.5s;
+  transition:
+    opacity 0.5s,
+    visibility 0.5s;
 
   .main-header--nav-is-opened & {
     z-index: $z-index-third;
@@ -141,6 +148,10 @@
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    gap: 14px;
+  }
+  @media (min-width: $wide-desktop-width) {
+    gap: 20px;
   }
 }
 
@@ -191,7 +202,6 @@
     letter-spacing: unset;
   }
 }
-
 
 .main-header__logo {
   justify-self: flex-end;

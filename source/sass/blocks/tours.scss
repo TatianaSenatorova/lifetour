@@ -56,10 +56,6 @@
   display: flex;
   justify-content: center;
   height: auto;
-
-  @media (min-width: $desktop-width) {
-    max-width: 380px;
-  }
 }
 
 .tours__button-secondary {

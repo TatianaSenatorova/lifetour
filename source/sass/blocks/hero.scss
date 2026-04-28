@@ -52,12 +52,16 @@
   @media (min-width: $desktop-width) {
     left: unset;
     transform: unset;
-    right: calc((100vw - 1440px) / 2 + 115px);
+    right: 115px;
     bottom: calc(
       var(--bullet-margin-bottom-desktop) + var(--bullet-radius-tablet)
     );
     margin-left: auto;
     max-width: 650px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    right: calc((100vw - 1440px) / 2 + 115px);
   }
 }
 

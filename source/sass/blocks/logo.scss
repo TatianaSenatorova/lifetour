@@ -13,13 +13,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 205px;
-    height: 62px;
-
     &--dark {
       width: 200px;
       height: 60px;
     }
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 205px;
+    height: 62px;
   }
 }
 
