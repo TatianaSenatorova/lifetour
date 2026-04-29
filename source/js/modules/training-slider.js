@@ -11,8 +11,8 @@ const updateSlidesFocusability = () => {
   if (!trainingSwiper) return;
 
   trainingSwiper.slides.forEach((slide) => {
-    const isActive = slide.classList.contains("swiper-slide-active");
-    toggleFocusability(slide, isActive);
+    const isVisible = slide.classList.contains("swiper-slide-visible");
+    toggleFocusability(slide, isVisible);
   });
 };
 
@@ -41,6 +41,7 @@ const initTrainingSlider = () => {
     slidesPerView: "auto",
     spaceBetween: 20,
     loop: true,
+    watchSlidesProgress: true,
 
     breakpoints: {
       [TABLET_WIDTH]: {
@@ -61,7 +62,7 @@ const initTrainingSlider = () => {
 
   mediaQuery.addEventListener("change", handleBreakpoint);
 
-  trainingSwiper.on("slideChange", updateSlidesFocusability);
+  trainingSwiper.on("slideChange transitionEnd resize", updateSlidesFocusability);
 };
 
 export { initTrainingSlider };

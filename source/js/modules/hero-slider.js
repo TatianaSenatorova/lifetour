@@ -24,6 +24,7 @@ const initHeroSlider = () => {
     direction: "horizontal",
     loop: true,
     slidesPerView: 1,
+    watchSlidesProgress: true,
 
     breakpoints: {
       [WIDE_DESKTOP_WIDTH]: {
