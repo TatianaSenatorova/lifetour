@@ -14,7 +14,6 @@
 .about__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    // grid-template-columns: 450px 270px;
     grid-template-columns: minmax(450px, 1fr) minmax(270px, 400px);
   }
 
@@ -33,6 +32,10 @@
   @media (min-width: $desktop-width) {
     padding-top: unset;
     max-width: unset;
+  }
+
+    @media (min-width: $wide-desktop-width) {
+     transform: translateX(calc((100vw - #{$wide-desktop-width}) / -2));
   }
 }
 

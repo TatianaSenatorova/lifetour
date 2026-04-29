@@ -16,18 +16,15 @@ const initReviewsSlider = () => {
     direction: "horizontal",
     slidesPerView: 1,
     spaceBetween: 30,
-    autoHeight: true,
 
     breakpoints: {
       [TABLET_WIDTH]: {
         slidesPerView: "auto",
-        autoHeight: false,
       },
 
       [WIDE_DESKTOP_WIDTH]: {
         slidesPerView: "auto",
         spaceBetween: 120,
-        autoHeight: false,
       },
     },
 
